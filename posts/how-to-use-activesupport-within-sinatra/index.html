@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		 
+			
+  
+    <meta name="twitter:card" content="summary"/>
+    
+      <meta name="twitter:image" content="https://gogolok.github.io/images/avatar.png" />
+    
+  
+  
+  <meta name="twitter:title" content="How to Use Activesupport Within Sinatra"/>
+  <meta name="twitter:description" content="# Gemfile source &#39;https://rubygems.org&#39; gem &#39;sinatra&#39;, &#39;1.4.5&#39; gem &#39;activesupport&#39;, &#39;4.1.4&#39; # app.rb require &#39;active_support/all&#39; require &#39;sinatra&#39; Time::DATE_FORMATS[:my_datetime] = &#34;%Y-%m-%d Hour: %H Minute: %M Second: %S&#34; get &#39;/&#39; do Time.now.to_s(:my_datetime) end
+https://gist.github.com/gogolok/5877734"/>
+  
+    <meta name="twitter:site" content="@gogolok"/>
+  
+  
+  
+  
+    <meta name="twitter:creator" content="@Robert Gogolok"/>
+  
+
+
+
+		
+		<meta name="author" content="Robert Gogolok">
+		
+		<meta name="generator" content="Hugo 0.46" />
+		<title>How to Use Activesupport Within Sinatra &middot; Robert Gogolok</title>
+		<link rel="shortcut icon" href="https://gogolok.github.io/images/favicon.ico">
+		<link rel="stylesheet" href="https://gogolok.github.io/css/style.css">
+		<link rel="stylesheet" href="https://gogolok.github.io/css/highlight.css">
+
+		
+		<link rel="stylesheet" href="https://gogolok.github.io/css/font-awesome.min.css">
+		
+
+		
+
+		
+	</head>
+
+    <body>
+       <nav class="main-nav">
+	
+	
+		<a href='https://gogolok.github.io/'> <span class="arrow">←</span>Home</a>
+	
+	<a href='https://gogolok.github.io/posts'>Archive</a>
+	<a href='https://gogolok.github.io/tags'>Tags</a>
+	<a href='https://gogolok.github.io/about'>About</a>
+
+	
+
+	
+</nav>
+
+
+        <section id="wrapper" class="post">
+            <article>
+                <header>
+                    <h1>
+                        How to Use Activesupport Within Sinatra
+                    </h1>
+                    <h2 class="headline">
+                    Aug 15, 2014 23:36
+                    · 31 words
+                    · 1 minute read
+                      <span class="tags">
+                      
+                      </span>
+                    </h2>
+                </header>
+                
+                <section id="post-body">
+                    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#75715e"># Gemfile</span>
+source <span style="color:#e6db74">&#39;https://rubygems.org&#39;</span>
+
+gem <span style="color:#e6db74">&#39;sinatra&#39;</span>, <span style="color:#e6db74">&#39;1.4.5&#39;</span>
+gem <span style="color:#e6db74">&#39;activesupport&#39;</span>, <span style="color:#e6db74">&#39;4.1.4&#39;</span></code></pre></div>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#75715e"># app.rb</span>
+require <span style="color:#e6db74">&#39;active_support/all&#39;</span>
+require <span style="color:#e6db74">&#39;sinatra&#39;</span>
+
+<span style="color:#66d9ef">Time</span><span style="color:#f92672">::</span><span style="color:#66d9ef">DATE_FORMATS</span><span style="color:#f92672">[</span><span style="color:#e6db74">:my_datetime</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;%Y-%m-%d Hour: %H Minute: %M Second: %S&#34;</span>
+
+get <span style="color:#e6db74">&#39;/&#39;</span> <span style="color:#66d9ef">do</span>
+  <span style="color:#66d9ef">Time</span><span style="color:#f92672">.</span>now<span style="color:#f92672">.</span>to_s(<span style="color:#e6db74">:my_datetime</span>)
+<span style="color:#66d9ef">end</span></code></pre></div></p>
+
+<p><a href="https://gist.github.com/gogolok/5877734">https://gist.github.com/gogolok/5877734</a></p>
+
+                </section>
+            </article>
+
+            
+
+            
+
+            
+
+            <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    <a class="symbol" href="https://www.facebook.com/robert.gogolok">
+        <i class="fa fa-facebook-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.github.com/gogolok">
+        <i class="fa fa-github-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.twitter.com/gogolok">
+        <i class="fa fa-twitter-square"></i>
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+       © Copyright 2018 <i class="fa fa-heart" aria-hidden="true"></i> Robert Gogolok
+    
+    </p>
+    <p class="small">
+        Powered by <a href="http://www.gohugo.io/">Hugo</a> Theme By <a href="https://github.com/nodejh/hugo-theme-cactus-plus">nodejh</a>
+    </p>
+</footer>
+
+        </section>
+
+        <script src="https://gogolok.github.io/js/jquery-3.3.1.min.js"></script>
+<script src="https://gogolok.github.io/js/main.js"></script>
+<script src="https://gogolok.github.io/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+    </body>
+</html>
