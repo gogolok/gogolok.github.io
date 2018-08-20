@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sinatra on Robert Gogolok</title>
+    <link>https://gogolok.github.io/tags/sinatra/</link>
+    <description>Recent content in Sinatra on Robert Gogolok</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 15 Aug 2014 23:36:32 +0200</lastBuildDate>
+    
+	<atom:link href="https://gogolok.github.io/tags/sinatra/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to Use ActiveSupport Within Sinatra</title>
+      <link>https://gogolok.github.io/posts/how-to-use-activesupport-within-sinatra/</link>
+      <pubDate>Fri, 15 Aug 2014 23:36:32 +0200</pubDate>
+      
+      <guid>https://gogolok.github.io/posts/how-to-use-activesupport-within-sinatra/</guid>
+      <description># Gemfile source &amp;#39;https://rubygems.org&amp;#39; gem &amp;#39;sinatra&amp;#39;, &amp;#39;1.4.5&amp;#39; gem &amp;#39;activesupport&amp;#39;, &amp;#39;4.1.4&amp;#39; # app.rb require &amp;#39;active_support/all&amp;#39; require &amp;#39;sinatra&amp;#39; Time::DATE_FORMATS[:my_datetime] = &amp;#34;%Y-%m-%d Hour: %H Minute: %M Second: %S&amp;#34; get &amp;#39;/&amp;#39; do Time.now.to_s(:my_datetime) end
+https://gist.github.com/gogolok/5877734</description>
+    </item>
+    
+    <item>
+      <title>Sinatra and I18n Support</title>
+      <link>https://gogolok.github.io/posts/sinatra-and-i18n-support/</link>
+      <pubDate>Fri, 18 Nov 2011 23:22:18 +0200</pubDate>
+      
+      <guid>https://gogolok.github.io/posts/sinatra-and-i18n-support/</guid>
+      <description>I’ve posted a sample sinatra app using the i18n gem on https://github.com/gogolok/examplegogo/tree/master/sinatra/i18n.</description>
+    </item>
+    
+  </channel>
+</rss>
