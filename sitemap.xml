@@ -8,6 +8,11 @@
   </url>
   
   <url>
+    <loc>http://example.org/posts/sinatra-and-i18n-support/</loc>
+    <lastmod>2011-11-18T23:22:18+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://example.org/categories/</loc>
     <priority>0</priority>
   </url>

@@ -22,5 +22,14 @@ The conference was held in the Pathé Tuschinski. Pathé Tuschinski is a beautif
 My favorite talk at the conference was “JRuby, dudes!” by Charles Nutter.</description>
     </item>
     
+    <item>
+      <title>Sinatra and I18n Support</title>
+      <link>http://example.org/posts/sinatra-and-i18n-support/</link>
+      <pubDate>Fri, 18 Nov 2011 23:22:18 +0200</pubDate>
+      
+      <guid>http://example.org/posts/sinatra-and-i18n-support/</guid>
+      <description>I’ve posted a sample sinatra app using the i18n gem on https://github.com/gogolok/examplegogo/tree/master/sinatra/i18n.</description>
+    </item>
+    
   </channel>
 </rss>
