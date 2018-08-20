@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Robert Gogolok</title>
+    <link>http://example.org/posts/</link>
+    <description>Recent content in Posts on Robert Gogolok</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 03 Jun 2012 23:07:36 +0200</lastBuildDate>
+    
+	<atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Euruko 2012 Trip Report</title>
+      <link>http://example.org/posts/euruko-2012-trip-report/</link>
+      <pubDate>Sun, 03 Jun 2012 23:07:36 +0200</pubDate>
+      
+      <guid>http://example.org/posts/euruko-2012-trip-report/</guid>
+      <description>Last week, I was able to attend Euruko 2012 in Amsterdam with a few of my colleagues from Avarteq. We arrived thursday night, hence we missed the boat party at thursday night.
+The conference was held in the Pathé Tuschinski. Pathé Tuschinski is a beautiful movie theatre. Nearly 600 attendees occupied the theatre, quite amazing, as the “Happy Friday Hug” depicts.
+My favorite talk at the conference was “JRuby, dudes!” by Charles Nutter.</description>
+    </item>
+    
+  </channel>
+</rss>
