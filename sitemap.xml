@@ -3,34 +3,34 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/posts/euruko-2012-trip-report/</loc>
+    <loc>https://gogolok.github.io/posts/euruko-2012-trip-report/</loc>
     <lastmod>2012-06-03T23:07:36+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/sinatra-and-i18n-support/</loc>
+    <loc>https://gogolok.github.io/posts/sinatra-and-i18n-support/</loc>
     <lastmod>2011-11-18T23:22:18+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://gogolok.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/posts/</loc>
+    <loc>https://gogolok.github.io/posts/</loc>
     <lastmod>2012-06-03T23:07:36+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/</loc>
+    <loc>https://gogolok.github.io/</loc>
     <lastmod>2012-06-03T23:07:36+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://gogolok.github.io/tags/</loc>
     <priority>0</priority>
   </url>
   

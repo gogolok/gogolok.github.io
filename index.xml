@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Robert Gogolok</title>
-    <link>http://example.org/</link>
+    <link>https://gogolok.github.io/</link>
     <description>Recent content on Robert Gogolok</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 03 Jun 2012 23:07:36 +0200</lastBuildDate>
     
-	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://gogolok.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Euruko 2012 Trip Report</title>
-      <link>http://example.org/posts/euruko-2012-trip-report/</link>
+      <link>https://gogolok.github.io/posts/euruko-2012-trip-report/</link>
       <pubDate>Sun, 03 Jun 2012 23:07:36 +0200</pubDate>
       
-      <guid>http://example.org/posts/euruko-2012-trip-report/</guid>
+      <guid>https://gogolok.github.io/posts/euruko-2012-trip-report/</guid>
       <description>Last week, I was able to attend Euruko 2012 in Amsterdam with a few of my colleagues from Avarteq. We arrived thursday night, hence we missed the boat party at thursday night.
 The conference was held in the Pathé Tuschinski. Pathé Tuschinski is a beautiful movie theatre. Nearly 600 attendees occupied the theatre, quite amazing, as the “Happy Friday Hug” depicts.
 My favorite talk at the conference was “JRuby, dudes!” by Charles Nutter.</description>
@@ -24,10 +24,10 @@ My favorite talk at the conference was “JRuby, dudes!” by Charles Nutter.</d
     
     <item>
       <title>Sinatra and I18n Support</title>
-      <link>http://example.org/posts/sinatra-and-i18n-support/</link>
+      <link>https://gogolok.github.io/posts/sinatra-and-i18n-support/</link>
       <pubDate>Fri, 18 Nov 2011 23:22:18 +0200</pubDate>
       
-      <guid>http://example.org/posts/sinatra-and-i18n-support/</guid>
+      <guid>https://gogolok.github.io/posts/sinatra-and-i18n-support/</guid>
       <description>I’ve posted a sample sinatra app using the i18n gem on https://github.com/gogolok/examplegogo/tree/master/sinatra/i18n.</description>
     </item>
     
