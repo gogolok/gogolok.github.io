@@ -13,9 +13,9 @@
     
   
   
-  <meta name="twitter:title" content="How to Use ActiveSupport Within Sinatra"/>
-  <meta name="twitter:description" content="# Gemfile source &#39;https://rubygems.org&#39; gem &#39;sinatra&#39;, &#39;1.4.5&#39; gem &#39;activesupport&#39;, &#39;4.1.4&#39; # app.rb require &#39;active_support/all&#39; require &#39;sinatra&#39; Time::DATE_FORMATS[:my_datetime] = &#34;%Y-%m-%d Hour: %H Minute: %M Second: %S&#34; get &#39;/&#39; do Time.now.to_s(:my_datetime) end
-https://gist.github.com/gogolok/5877734"/>
+  <meta name="twitter:title" content="Railswaycon 2012 Mobile Backends in Ruby on Rails"/>
+  <meta name="twitter:description" content="Julian Fischer Avarteq GmbH und Robert Gogolok Avarteq GmbH 17.10.2012 | 10:30 – 11:30 Uhr | Zagrebsaal 2
+Ruby on Rails has become a well accepted and highly appreciated tool for building modern web apps. A complete and well cultivated eco system has been created over the years. Now the increasing demand for mobile applications raises a demand for well designed (JSON) APIs to talk to. It is not less than a perfect match."/>
   
     <meta name="twitter:site" content="@gogolok"/>
   
@@ -31,7 +31,7 @@ https://gist.github.com/gogolok/5877734"/>
 		<meta name="author" content="Robert Gogolok">
 		
 		<meta name="generator" content="Hugo 0.46" />
-		<title>How to Use ActiveSupport Within Sinatra &middot; Robert Gogolok</title>
+		<title>Railswaycon 2012 Mobile Backends in Ruby on Rails &middot; Robert Gogolok</title>
 		<link rel="shortcut icon" href="https://gogolok.github.io/images/favicon.ico">
 		<link rel="stylesheet" href="https://gogolok.github.io/css/style.css">
 		<link rel="stylesheet" href="https://gogolok.github.io/css/highlight.css">
@@ -65,11 +65,11 @@ https://gist.github.com/gogolok/5877734"/>
             <article>
                 <header>
                     <h1>
-                        How to Use ActiveSupport Within Sinatra
+                        Railswaycon 2012 Mobile Backends in Ruby on Rails
                     </h1>
                     <h2 class="headline">
-                    Aug 15, 2014 23:36
-                    · 31 words
+                    Oct 10, 2012 23:42
+                    · 176 words
                     · 1 minute read
                       <span class="tags">
                       
@@ -78,23 +78,10 @@ https://gist.github.com/gogolok/5877734"/>
                 </header>
                 
                 <section id="post-body">
-                    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#75715e"># Gemfile</span>
-source <span style="color:#e6db74">&#39;https://rubygems.org&#39;</span>
+                    <p>Julian Fischer Avarteq GmbH und Robert Gogolok Avarteq GmbH<br/>
+17.10.2012 | 10:30 – 11:30 Uhr | Zagrebsaal 2</p>
 
-gem <span style="color:#e6db74">&#39;sinatra&#39;</span>, <span style="color:#e6db74">&#39;1.4.5&#39;</span>
-gem <span style="color:#e6db74">&#39;activesupport&#39;</span>, <span style="color:#e6db74">&#39;4.1.4&#39;</span></code></pre></div>
-
-<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#75715e"># app.rb</span>
-require <span style="color:#e6db74">&#39;active_support/all&#39;</span>
-require <span style="color:#e6db74">&#39;sinatra&#39;</span>
-
-<span style="color:#66d9ef">Time</span><span style="color:#f92672">::</span><span style="color:#66d9ef">DATE_FORMATS</span><span style="color:#f92672">[</span><span style="color:#e6db74">:my_datetime</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;%Y-%m-%d Hour: %H Minute: %M Second: %S&#34;</span>
-
-get <span style="color:#e6db74">&#39;/&#39;</span> <span style="color:#66d9ef">do</span>
-  <span style="color:#66d9ef">Time</span><span style="color:#f92672">.</span>now<span style="color:#f92672">.</span>to_s(<span style="color:#e6db74">:my_datetime</span>)
-<span style="color:#66d9ef">end</span></code></pre></div></p>
-
-<p><a href="https://gist.github.com/gogolok/5877734">https://gist.github.com/gogolok/5877734</a></p>
+<p>Ruby on Rails has become a well accepted and highly appreciated tool for building modern web apps. A complete and well cultivated eco system has been created over the years. Now the increasing demand for mobile applications raises a demand for well designed (JSON) APIs to talk to. It is not less than a perfect match. Ruby on Rails is so sweet to build both web apps as well as APIs to be consumed by mobile apps. In this talk you will have a look at common challenges such as authentication, designing the API’s JSON structures as well as how to minimize traffic between your mobile app and its backend. Exemplary ways to encounter those challenges will be illustrated on both sides: the rails server and the mobile app. At the end of this talk you will have a basic plan on how to approach a mobile app using Ruby on Rails and how build its backend, easily.</p>
 
                 </section>
             </article>

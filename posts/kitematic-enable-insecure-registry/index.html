@@ -13,9 +13,9 @@
     
   
   
-  <meta name="twitter:title" content="How to Use ActiveSupport Within Sinatra"/>
-  <meta name="twitter:description" content="# Gemfile source &#39;https://rubygems.org&#39; gem &#39;sinatra&#39;, &#39;1.4.5&#39; gem &#39;activesupport&#39;, &#39;4.1.4&#39; # app.rb require &#39;active_support/all&#39; require &#39;sinatra&#39; Time::DATE_FORMATS[:my_datetime] = &#34;%Y-%m-%d Hour: %H Minute: %M Second: %S&#34; get &#39;/&#39; do Time.now.to_s(:my_datetime) end
-https://gist.github.com/gogolok/5877734"/>
+  <meta name="twitter:title" content="Enable Insecure Registry on Kitematic"/>
+  <meta name="twitter:description" content="In order to use an insecure registry with Kitematic, you can follow the steps below:
+ Login to the Kitematic box, e.g. double click in VirtualBox on the kitematic machine that is named &lsquo;default&rsquo; by default :-) Edit the file /var/lib/boot2docker/profile and append to EXTRA_ARGS the --insecure-registry parameter:  EXTRA_ARGS=&#39; ... --insecure-registry myregistrydomain.com:5000 &#39;  Restart docker /usr/local/etc/init.d/docker restart  You should now be able to push an image to your insecure registry."/>
   
     <meta name="twitter:site" content="@gogolok"/>
   
@@ -31,7 +31,7 @@ https://gist.github.com/gogolok/5877734"/>
 		<meta name="author" content="Robert Gogolok">
 		
 		<meta name="generator" content="Hugo 0.46" />
-		<title>How to Use ActiveSupport Within Sinatra &middot; Robert Gogolok</title>
+		<title>Enable Insecure Registry on Kitematic &middot; Robert Gogolok</title>
 		<link rel="shortcut icon" href="https://gogolok.github.io/images/favicon.ico">
 		<link rel="stylesheet" href="https://gogolok.github.io/css/style.css">
 		<link rel="stylesheet" href="https://gogolok.github.io/css/highlight.css">
@@ -65,11 +65,11 @@ https://gist.github.com/gogolok/5877734"/>
             <article>
                 <header>
                     <h1>
-                        How to Use ActiveSupport Within Sinatra
+                        Enable Insecure Registry on Kitematic
                     </h1>
                     <h2 class="headline">
-                    Aug 15, 2014 23:36
-                    · 31 words
+                    Feb 9, 2016 23:47
+                    · 69 words
                     · 1 minute read
                       <span class="tags">
                       
@@ -78,23 +78,23 @@ https://gist.github.com/gogolok/5877734"/>
                 </header>
                 
                 <section id="post-body">
-                    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#75715e"># Gemfile</span>
-source <span style="color:#e6db74">&#39;https://rubygems.org&#39;</span>
+                    <p>In order to use an insecure registry with <a href="https://kitematic.com/">Kitematic</a>, you can follow the steps below:</p>
 
-gem <span style="color:#e6db74">&#39;sinatra&#39;</span>, <span style="color:#e6db74">&#39;1.4.5&#39;</span>
-gem <span style="color:#e6db74">&#39;activesupport&#39;</span>, <span style="color:#e6db74">&#39;4.1.4&#39;</span></code></pre></div>
+<ul>
+<li>Login to the Kitematic box, e.g. double click in VirtualBox on the kitematic machine that is named &lsquo;default&rsquo; by default :-)</li>
+<li>Edit the file <code>/var/lib/boot2docker/profile</code> and append to <code>EXTRA_ARGS</code> the <code>--insecure-registry</code> parameter:</li>
+</ul>
 
-<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#75715e"># app.rb</span>
-require <span style="color:#e6db74">&#39;active_support/all&#39;</span>
-require <span style="color:#e6db74">&#39;sinatra&#39;</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">EXTRA_ARGS<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;
+</span><span style="color:#e6db74">...
+</span><span style="color:#e6db74">--insecure-registry myregistrydomain.com:5000
+</span><span style="color:#e6db74">&#39;</span></code></pre></div>
 
-<span style="color:#66d9ef">Time</span><span style="color:#f92672">::</span><span style="color:#66d9ef">DATE_FORMATS</span><span style="color:#f92672">[</span><span style="color:#e6db74">:my_datetime</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;%Y-%m-%d Hour: %H Minute: %M Second: %S&#34;</span>
+<ul>
+<li>Restart docker <code>/usr/local/etc/init.d/docker restart</code></li>
+</ul>
 
-get <span style="color:#e6db74">&#39;/&#39;</span> <span style="color:#66d9ef">do</span>
-  <span style="color:#66d9ef">Time</span><span style="color:#f92672">.</span>now<span style="color:#f92672">.</span>to_s(<span style="color:#e6db74">:my_datetime</span>)
-<span style="color:#66d9ef">end</span></code></pre></div></p>
-
-<p><a href="https://gist.github.com/gogolok/5877734">https://gist.github.com/gogolok/5877734</a></p>
+<p>You should now be able to push an image to your insecure registry.</p>
 
                 </section>
             </article>

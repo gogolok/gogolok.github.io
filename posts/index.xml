@@ -6,19 +6,66 @@
     <description>Recent content in Posts on Robert Gogolok</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 15 Aug 2014 23:36:32 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 09 Feb 2016 23:47:55 +0200</lastBuildDate>
     
 	<atom:link href="https://gogolok.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>How to Use Activesupport Within Sinatra</title>
+      <title>Enable Insecure Registry on Kitematic</title>
+      <link>https://gogolok.github.io/posts/kitematic-enable-insecure-registry/</link>
+      <pubDate>Tue, 09 Feb 2016 23:47:55 +0200</pubDate>
+      
+      <guid>https://gogolok.github.io/posts/kitematic-enable-insecure-registry/</guid>
+      <description>In order to use an insecure registry with Kitematic, you can follow the steps below:
+ Login to the Kitematic box, e.g. double click in VirtualBox on the kitematic machine that is named &amp;lsquo;default&amp;rsquo; by default :-) Edit the file /var/lib/boot2docker/profile and append to EXTRA_ARGS the --insecure-registry parameter:  EXTRA_ARGS=&amp;#39; ... --insecure-registry myregistrydomain.com:5000 &amp;#39;  Restart docker /usr/local/etc/init.d/docker restart  You should now be able to push an image to your insecure registry.</description>
+    </item>
+    
+    <item>
+      <title>How to Use ActiveSupport Within Sinatra</title>
       <link>https://gogolok.github.io/posts/how-to-use-activesupport-within-sinatra/</link>
       <pubDate>Fri, 15 Aug 2014 23:36:32 +0200</pubDate>
       
       <guid>https://gogolok.github.io/posts/how-to-use-activesupport-within-sinatra/</guid>
       <description># Gemfile source &amp;#39;https://rubygems.org&amp;#39; gem &amp;#39;sinatra&amp;#39;, &amp;#39;1.4.5&amp;#39; gem &amp;#39;activesupport&amp;#39;, &amp;#39;4.1.4&amp;#39; # app.rb require &amp;#39;active_support/all&amp;#39; require &amp;#39;sinatra&amp;#39; Time::DATE_FORMATS[:my_datetime] = &amp;#34;%Y-%m-%d Hour: %H Minute: %M Second: %S&amp;#34; get &amp;#39;/&amp;#39; do Time.now.to_s(:my_datetime) end
 https://gist.github.com/gogolok/5877734</description>
+    </item>
+    
+    <item>
+      <title>Rails Girls Luxembourg: Rails Coach</title>
+      <link>https://gogolok.github.io/posts/rails-girls-luxembourg-rails-coach/</link>
+      <pubDate>Wed, 16 Apr 2014 23:45:30 +0200</pubDate>
+      
+      <guid>https://gogolok.github.io/posts/rails-girls-luxembourg-rails-coach/</guid>
+      <description>I&amp;rsquo;m helping Rails Girls Luxembourg{:target=&amp;rdquo;_blank&amp;rdquo;} as a Rails coach this May.</description>
+    </item>
+    
+    <item>
+      <title>Generating PDFs With Prawn and Ruby</title>
+      <link>https://gogolok.github.io/posts/generating-pdfs-with-prawn-and-ruby/</link>
+      <pubDate>Wed, 16 Apr 2014 23:41:37 +0200</pubDate>
+      
+      <guid>https://gogolok.github.io/posts/generating-pdfs-with-prawn-and-ruby/</guid>
+      <description>I’ve written a guest post at http://blog.anynines.com/generating-pdfs-prawn-ruby/.</description>
+    </item>
+    
+    <item>
+      <title>Freebsd 9.1 Upgrade</title>
+      <link>https://gogolok.github.io/posts/freebsd-9-1-upgrade/</link>
+      <pubDate>Thu, 03 Jan 2013 23:44:27 +0200</pubDate>
+      
+      <guid>https://gogolok.github.io/posts/freebsd-9-1-upgrade/</guid>
+      <description>I’ve upgrade all my servers to FreeBSD 9.1. It’s an easy task following the &amp;lsquo;Upgrading Using “FreeBSD Update”&amp;rsquo; section.</description>
+    </item>
+    
+    <item>
+      <title>Railswaycon 2012 Mobile Backends in Ruby on Rails</title>
+      <link>https://gogolok.github.io/posts/railswaycon-2012-mobile-backends-in-ruby-on-rails/</link>
+      <pubDate>Wed, 10 Oct 2012 23:42:59 +0200</pubDate>
+      
+      <guid>https://gogolok.github.io/posts/railswaycon-2012-mobile-backends-in-ruby-on-rails/</guid>
+      <description>Julian Fischer Avarteq GmbH und Robert Gogolok Avarteq GmbH 17.10.2012 | 10:30 – 11:30 Uhr | Zagrebsaal 2
+Ruby on Rails has become a well accepted and highly appreciated tool for building modern web apps. A complete and well cultivated eco system has been created over the years. Now the increasing demand for mobile applications raises a demand for well designed (JSON) APIs to talk to. It is not less than a perfect match.</description>
     </item>
     
     <item>
