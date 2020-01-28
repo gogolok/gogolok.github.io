@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Robert Gogolok</title>
+    <title>gogolok</title>
     <link>https://gogolok.github.io/</link>
-    <description>Recent content on Robert Gogolok</description>
+    <description>Recent content on gogolok</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Mon, 20 Aug 2018 23:52:39 +0200</lastBuildDate>
     
 	<atom:link href="https://gogolok.github.io/index.xml" rel="self" type="application/rss+xml" />
@@ -36,8 +36,7 @@
       <pubDate>Fri, 15 Aug 2014 23:36:32 +0200</pubDate>
       
       <guid>https://gogolok.github.io/posts/how-to-use-activesupport-within-sinatra/</guid>
-      <description># Gemfile source &amp;#39;https://rubygems.org&amp;#39; gem &amp;#39;sinatra&amp;#39;, &amp;#39;1.4.5&amp;#39; gem &amp;#39;activesupport&amp;#39;, &amp;#39;4.1.4&amp;#39; # app.rb require &amp;#39;active_support/all&amp;#39; require &amp;#39;sinatra&amp;#39; Time::DATE_FORMATS[:my_datetime] = &amp;#34;%Y-%m-%d Hour: %H Minute: %M Second: %S&amp;#34; get &amp;#39;/&amp;#39; do Time.now.to_s(:my_datetime) end
-https://gist.github.com/gogolok/5877734</description>
+      <description># Gemfile source &amp;#39;https://rubygems.org&amp;#39; gem &amp;#39;sinatra&amp;#39;, &amp;#39;1.4.5&amp;#39; gem &amp;#39;activesupport&amp;#39;, &amp;#39;4.1.4&amp;#39; # app.rb require &amp;#39;active_support/all&amp;#39; require &amp;#39;sinatra&amp;#39; Time::DATE_FORMATS[:my_datetime] = &amp;#34;%Y-%m-%d Hour: %H Minute: %M Second: %S&amp;#34; get &amp;#39;/&amp;#39; do Time.now.to_s(:my_datetime) end https://gist.github.com/gogolok/5877734</description>
     </item>
     
     <item>
@@ -73,7 +72,7 @@ https://gist.github.com/gogolok/5877734</description>
       <pubDate>Wed, 10 Oct 2012 23:42:59 +0200</pubDate>
       
       <guid>https://gogolok.github.io/posts/railswaycon-2012-mobile-backends-in-ruby-on-rails/</guid>
-      <description>Julian Fischer Avarteq GmbH und Robert Gogolok Avarteq GmbH 17.10.2012 | 10:30 – 11:30 Uhr | Zagrebsaal 2
+      <description>Julian Fischer Avarteq GmbH und Robert Gogolok Avarteq GmbH17.10.2012 | 10:30 – 11:30 Uhr | Zagrebsaal 2
 Ruby on Rails has become a well accepted and highly appreciated tool for building modern web apps. A complete and well cultivated eco system has been created over the years. Now the increasing demand for mobile applications raises a demand for well designed (JSON) APIs to talk to. It is not less than a perfect match.</description>
     </item>
     
@@ -95,6 +94,21 @@ My favorite talk at the conference was “JRuby, dudes!” by Charles Nutter.</d
       
       <guid>https://gogolok.github.io/posts/sinatra-and-i18n-support/</guid>
       <description>I’ve posted a sample sinatra app using the i18n gem on https://github.com/gogolok/examplegogo/tree/master/sinatra/i18n.</description>
+    </item>
+    
+    <item>
+      <title>Impressum</title>
+      <link>https://gogolok.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gogolok.github.io/about/</guid>
+      <description>Impressum Angaben gemäß § 5 TMG
+Robert Gogolok Mühlentalblick 9 66583 Spiesen-Elversberg
+Kontakt: Telefon: 01234-789456 Fax: 1234-56789 E-Mail: robertgogolok@yahoo.de
+Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV: Robert Gogolok Mühlentalblick 9 66583 Spiesen-Elversberg
+Haftungsausschluss:
+Haftung für Links
+Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.</description>
     </item>
     
   </channel>

@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Conference on Robert Gogolok</title>
+    <title>Conference on gogolok</title>
     <link>https://gogolok.github.io/tags/conference/</link>
-    <description>Recent content in Conference on Robert Gogolok</description>
+    <description>Recent content in Conference on gogolok</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Wed, 10 Oct 2012 23:42:59 +0200</lastBuildDate>
     
 	<atom:link href="https://gogolok.github.io/tags/conference/index.xml" rel="self" type="application/rss+xml" />
@@ -17,7 +17,7 @@
       <pubDate>Wed, 10 Oct 2012 23:42:59 +0200</pubDate>
       
       <guid>https://gogolok.github.io/posts/railswaycon-2012-mobile-backends-in-ruby-on-rails/</guid>
-      <description>Julian Fischer Avarteq GmbH und Robert Gogolok Avarteq GmbH 17.10.2012 | 10:30 – 11:30 Uhr | Zagrebsaal 2
+      <description>Julian Fischer Avarteq GmbH und Robert Gogolok Avarteq GmbH17.10.2012 | 10:30 – 11:30 Uhr | Zagrebsaal 2
 Ruby on Rails has become a well accepted and highly appreciated tool for building modern web apps. A complete and well cultivated eco system has been created over the years. Now the increasing demand for mobile applications raises a demand for well designed (JSON) APIs to talk to. It is not less than a perfect match.</description>
     </item>
     

@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Rails on Robert Gogolok</title>
+    <title>Rails on gogolok</title>
     <link>https://gogolok.github.io/tags/rails/</link>
-    <description>Recent content in Rails on Robert Gogolok</description>
+    <description>Recent content in Rails on gogolok</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Wed, 16 Apr 2014 23:45:30 +0200</lastBuildDate>
     
 	<atom:link href="https://gogolok.github.io/tags/rails/index.xml" rel="self" type="application/rss+xml" />

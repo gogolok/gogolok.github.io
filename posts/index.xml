@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Robert Gogolok</title>
+    <title>Posts on gogolok</title>
     <link>https://gogolok.github.io/posts/</link>
-    <description>Recent content in Posts on Robert Gogolok</description>
+    <description>Recent content in Posts on gogolok</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Mon, 20 Aug 2018 23:52:39 +0200</lastBuildDate>
     
 	<atom:link href="https://gogolok.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
@@ -36,8 +36,7 @@
       <pubDate>Fri, 15 Aug 2014 23:36:32 +0200</pubDate>
       
       <guid>https://gogolok.github.io/posts/how-to-use-activesupport-within-sinatra/</guid>
-      <description># Gemfile source &amp;#39;https://rubygems.org&amp;#39; gem &amp;#39;sinatra&amp;#39;, &amp;#39;1.4.5&amp;#39; gem &amp;#39;activesupport&amp;#39;, &amp;#39;4.1.4&amp;#39; # app.rb require &amp;#39;active_support/all&amp;#39; require &amp;#39;sinatra&amp;#39; Time::DATE_FORMATS[:my_datetime] = &amp;#34;%Y-%m-%d Hour: %H Minute: %M Second: %S&amp;#34; get &amp;#39;/&amp;#39; do Time.now.to_s(:my_datetime) end
-https://gist.github.com/gogolok/5877734</description>
+      <description># Gemfile source &amp;#39;https://rubygems.org&amp;#39; gem &amp;#39;sinatra&amp;#39;, &amp;#39;1.4.5&amp;#39; gem &amp;#39;activesupport&amp;#39;, &amp;#39;4.1.4&amp;#39; # app.rb require &amp;#39;active_support/all&amp;#39; require &amp;#39;sinatra&amp;#39; Time::DATE_FORMATS[:my_datetime] = &amp;#34;%Y-%m-%d Hour: %H Minute: %M Second: %S&amp;#34; get &amp;#39;/&amp;#39; do Time.now.to_s(:my_datetime) end https://gist.github.com/gogolok/5877734</description>
     </item>
     
     <item>
@@ -73,7 +72,7 @@ https://gist.github.com/gogolok/5877734</description>
       <pubDate>Wed, 10 Oct 2012 23:42:59 +0200</pubDate>
       
       <guid>https://gogolok.github.io/posts/railswaycon-2012-mobile-backends-in-ruby-on-rails/</guid>
-      <description>Julian Fischer Avarteq GmbH und Robert Gogolok Avarteq GmbH 17.10.2012 | 10:30 – 11:30 Uhr | Zagrebsaal 2
+      <description>Julian Fischer Avarteq GmbH und Robert Gogolok Avarteq GmbH17.10.2012 | 10:30 – 11:30 Uhr | Zagrebsaal 2
 Ruby on Rails has become a well accepted and highly appreciated tool for building modern web apps. A complete and well cultivated eco system has been created over the years. Now the increasing demand for mobile applications raises a demand for well designed (JSON) APIs to talk to. It is not less than a perfect match.</description>
     </item>
     

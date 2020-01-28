@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Robert Gogolok</title>
+    <title>Tags on gogolok</title>
     <link>https://gogolok.github.io/tags/</link>
-    <description>Recent content in Tags on Robert Gogolok</description>
+    <description>Recent content in Tags on gogolok</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Mon, 20 Aug 2018 23:52:39 +0200</lastBuildDate>
     
 	<atom:link href="https://gogolok.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
@@ -21,33 +21,6 @@
     </item>
     
     <item>
-      <title>Conference</title>
-      <link>https://gogolok.github.io/tags/conference/</link>
-      <pubDate>Wed, 10 Oct 2012 23:42:59 +0200</pubDate>
-      
-      <guid>https://gogolok.github.io/tags/conference/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Docker</title>
-      <link>https://gogolok.github.io/tags/docker/</link>
-      <pubDate>Tue, 09 Feb 2016 23:47:55 +0200</pubDate>
-      
-      <guid>https://gogolok.github.io/tags/docker/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Freebsd</title>
-      <link>https://gogolok.github.io/tags/freebsd/</link>
-      <pubDate>Thu, 03 Jan 2013 23:44:27 +0200</pubDate>
-      
-      <guid>https://gogolok.github.io/tags/freebsd/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Go</title>
       <link>https://gogolok.github.io/tags/go/</link>
       <pubDate>Mon, 20 Aug 2018 23:52:39 +0200</pubDate>
@@ -57,20 +30,11 @@
     </item>
     
     <item>
-      <title>Pdf</title>
-      <link>https://gogolok.github.io/tags/pdf/</link>
-      <pubDate>Wed, 16 Apr 2014 23:41:37 +0200</pubDate>
+      <title>Docker</title>
+      <link>https://gogolok.github.io/tags/docker/</link>
+      <pubDate>Tue, 09 Feb 2016 23:47:55 +0200</pubDate>
       
-      <guid>https://gogolok.github.io/tags/pdf/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Rails</title>
-      <link>https://gogolok.github.io/tags/rails/</link>
-      <pubDate>Wed, 16 Apr 2014 23:45:30 +0200</pubDate>
-      
-      <guid>https://gogolok.github.io/tags/rails/</guid>
+      <guid>https://gogolok.github.io/tags/docker/</guid>
       <description></description>
     </item>
     
@@ -89,6 +53,42 @@
       <pubDate>Fri, 15 Aug 2014 23:36:32 +0200</pubDate>
       
       <guid>https://gogolok.github.io/tags/sinatra/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rails</title>
+      <link>https://gogolok.github.io/tags/rails/</link>
+      <pubDate>Wed, 16 Apr 2014 23:45:30 +0200</pubDate>
+      
+      <guid>https://gogolok.github.io/tags/rails/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PDF</title>
+      <link>https://gogolok.github.io/tags/pdf/</link>
+      <pubDate>Wed, 16 Apr 2014 23:41:37 +0200</pubDate>
+      
+      <guid>https://gogolok.github.io/tags/pdf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>FreeBSD</title>
+      <link>https://gogolok.github.io/tags/freebsd/</link>
+      <pubDate>Thu, 03 Jan 2013 23:44:27 +0200</pubDate>
+      
+      <guid>https://gogolok.github.io/tags/freebsd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Conference</title>
+      <link>https://gogolok.github.io/tags/conference/</link>
+      <pubDate>Wed, 10 Oct 2012 23:42:59 +0200</pubDate>
+      
+      <guid>https://gogolok.github.io/tags/conference/</guid>
       <description></description>
     </item>
     
