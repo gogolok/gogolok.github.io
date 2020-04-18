@@ -6,10 +6,22 @@
     <description>Recent content on gogolok</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 20 Aug 2018 23:52:39 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 18 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://gogolok.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>My Freebsd 12 Setup</title>
+      <link>https://gogolok.github.io/posts/my-freebsd-12-setup/</link>
+      <pubDate>Sat, 18 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://gogolok.github.io/posts/my-freebsd-12-setup/</guid>
+      <description>From time to time I&amp;rsquo;m doing some stuff on FreeBSD. I still like it for its simplicity (I&amp;rsquo;m old and Linux is progressing way to fast ;-).
+I&amp;rsquo;m keeping some notes how to set up FreeBSD manually in this blog post. For newer versions of FreeBSD I&amp;rsquo;ll create a new post.
+Disadvantages:
+ manual setup  # freebsd-update fetch install # shutdown -r now # pkg The package management tool is not yet installed on your system.</description>
+    </item>
     
     <item>
       <title>Switched to Hugo</title>

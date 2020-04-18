@@ -3,6 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://gogolok.github.io/tags/freebsd/</loc>
+    <lastmod>2020-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gogolok.github.io/</loc>
+    <lastmod>2020-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gogolok.github.io/posts/my-freebsd-12-setup/</loc>
+    <lastmod>2020-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gogolok.github.io/posts/</loc>
+    <lastmod>2020-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gogolok.github.io/tags/</loc>
+    <lastmod>2020-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://gogolok.github.io/tags/blogging/</loc>
     <lastmod>2018-08-20T23:52:39+02:00</lastmod>
   </url>
@@ -13,22 +38,7 @@
   </url>
   
   <url>
-    <loc>https://gogolok.github.io/</loc>
-    <lastmod>2018-08-20T23:52:39+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://gogolok.github.io/posts/</loc>
-    <lastmod>2018-08-20T23:52:39+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://gogolok.github.io/posts/switched-to-hugo/</loc>
-    <lastmod>2018-08-20T23:52:39+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://gogolok.github.io/tags/</loc>
     <lastmod>2018-08-20T23:52:39+02:00</lastmod>
   </url>
   
@@ -75,11 +85,6 @@
   <url>
     <loc>https://gogolok.github.io/tags/pdf/</loc>
     <lastmod>2014-04-16T23:41:37+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://gogolok.github.io/tags/freebsd/</loc>
-    <lastmod>2013-01-03T23:44:27+02:00</lastmod>
   </url>
   
   <url>
