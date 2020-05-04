@@ -6,10 +6,26 @@
     <description>Recent content on gogolok</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 18 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 04 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://gogolok.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>My iTerm2 Setup</title>
+      <link>https://gogolok.github.io/posts/my-iterm2-setup/</link>
+      <pubDate>Mon, 04 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://gogolok.github.io/posts/my-iterm2-setup/</guid>
+      <description>I extend the default installation of iTerm2 in the following ways.
+Key Shortcuts Move Cusrsor One Worl Left Keyboard shortcut: option + left arrow
+Action: Send Hex Code
+Code: 0x1b 0x62
+Move Cusrsor One Worl Right Keyboard shortcut: option + right arrow
+Action: Send Hex Code
+Code: 0x1b 0x66
+Colors I use the Selenized color palette.</description>
+    </item>
     
     <item>
       <title>My Freebsd 12 Setup</title>
