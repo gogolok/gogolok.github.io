@@ -156,5 +156,16 @@ Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wi
       <description> Bilder von Spiesen, Saarland, Deutschland  </description>
     </item>
     
+    <item>
+      <title>The Now Page</title>
+      <link>https://gogolok.github.io/now/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gogolok.github.io/now/</guid>
+      <description>WHAT I&amp;rsquo;M DOING NOW (This is a now page, and if you have your own site, you should make one, too.)
+Where I&amp;rsquo;m currently living in Saarland, Germany, probably for the rest of my life.
+What  Working with anynines on our mission Fully automating the entire lifecycle of a wide range of data services to run on cloud-native platforms across infrastructures at scale., see Principles and Strategies of Data Service Automation.</description>
+    </item>
+    
   </channel>
 </rss>
