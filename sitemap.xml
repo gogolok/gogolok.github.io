@@ -4,7 +4,27 @@
   
   <url>
     <loc>https://gogolok.github.io/</loc>
-    <lastmod>2020-05-04T00:00:00+00:00</lastmod>
+    <lastmod>2020-09-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gogolok.github.io/tags/kubernetes/</loc>
+    <lastmod>2020-09-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gogolok.github.io/posts/kubernetes-finalizers-in-custom-resources/</loc>
+    <lastmod>2020-09-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gogolok.github.io/posts/</loc>
+    <lastmod>2020-09-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gogolok.github.io/tags/</loc>
+    <lastmod>2020-09-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -14,16 +34,6 @@
   
   <url>
     <loc>https://gogolok.github.io/posts/my-iterm2-setup/</loc>
-    <lastmod>2020-05-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://gogolok.github.io/posts/</loc>
-    <lastmod>2020-05-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://gogolok.github.io/tags/</loc>
     <lastmod>2020-05-04T00:00:00+00:00</lastmod>
   </url>
   

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+
+    <meta name="author" content="Robert Gogolok">
+    <meta name="description" content="Authors  Matthew Doherty Philipp Kuntz Robert Gogolok  Introduction When extending the Kubernetes API with CustomResourceDefinitions you’ll come across the dilemma to clean up external resources when deleting a custom resource. Although you can create a custom resource simply to store and retrieve structured data, most of the time there is some entity involved, like custom controllers . The controller will manage this resource and create other external resources to handle the semantics of that resource.">
+    <meta name="keywords" content="blog,developer,personal">
+
+    
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Kubernetes: Finalizers in Custom Resources"/>
+<meta name="twitter:description" content="Authors  Matthew Doherty Philipp Kuntz Robert Gogolok  Introduction When extending the Kubernetes API with CustomResourceDefinitions you’ll come across the dilemma to clean up external resources when deleting a custom resource. Although you can create a custom resource simply to store and retrieve structured data, most of the time there is some entity involved, like custom controllers . The controller will manage this resource and create other external resources to handle the semantics of that resource."/>
+
+    <meta property="og:title" content="Kubernetes: Finalizers in Custom Resources" />
+<meta property="og:description" content="Authors  Matthew Doherty Philipp Kuntz Robert Gogolok  Introduction When extending the Kubernetes API with CustomResourceDefinitions you’ll come across the dilemma to clean up external resources when deleting a custom resource. Although you can create a custom resource simply to store and retrieve structured data, most of the time there is some entity involved, like custom controllers . The controller will manage this resource and create other external resources to handle the semantics of that resource." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://gogolok.github.io/posts/kubernetes-finalizers-in-custom-resources/" />
+<meta property="article:published_time" content="2020-09-10T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-09-10T00:00:00+00:00" />
+
+
+    
+      <base href="https://gogolok.github.io/posts/kubernetes-finalizers-in-custom-resources/">
+    
+    <title>
+  Kubernetes: Finalizers in Custom Resources · gogolok
+</title>
+
+    
+      <link rel="canonical" href="https://gogolok.github.io/posts/kubernetes-finalizers-in-custom-resources/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="https://gogolok.github.io/css/coder.min.0e5ce5b959a68dfe0232c6ddcec1e8ef154517c968464707f3181c437fe611c0.css" integrity="sha256-DlzluVmmjf4CMsbdzsHo7xVFF8loRkcH8xgcQ3/mEcA=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="https://gogolok.github.io/css/coder-dark.min.717236c74e0a5208ef73964a9f44c6b443b689a95b270d8b2a40d0c012460dac.css" integrity="sha256-cXI2x04KUgjvc5ZKn0TGtEO2ialbJw2LKkDQwBJGDaw=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://gogolok.github.io/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://gogolok.github.io/images/favicon-16x16.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.74.3" />
+  </head>
+  
+  
+  
+    
+  
+  <body class="colorscheme-auto"
+        onload=""
+  >
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://gogolok.github.io/">
+      gogolok
+    </a>
+    
+      <span id="dark-mode-toggle" class="float-right">
+        <i class="fas fa-adjust fa-fw"></i>
+      </span>
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fas fa-bars fa-fw"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://gogolok.github.io/about/">Impressum</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://gogolok.github.io/now/">Now</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://gogolok.github.io/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://gogolok.github.io/projects/">Projects</a>
+            </li>
+          
+        
+        
+        <li class="navigation-item separator">
+          <span>|</span>
+        </li>
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">Kubernetes: Finalizers in Custom Resources</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2020-09-10T00:00:00Z'>
+                September 10, 2020
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              4-minute read
+            </span>
+          </div>
+          
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="https://gogolok.github.io/tags/kubernetes/">Kubernetes</a></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+        <h1 id="authors">Authors</h1>
+<ul>
+<li>Matthew Doherty</li>
+<li>Philipp Kuntz</li>
+<li>Robert Gogolok</li>
+</ul>
+<h1 id="introduction">Introduction</h1>
+<p>When extending the Kubernetes API with <a href="https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/">CustomResourceDefinitions</a>
+you’ll come  across the dilemma to clean up external resources when deleting a
+custom resource. Although you can create a custom resource simply to store and
+retrieve structured data, most of the time there is some entity involved,
+like custom controllers . The controller will manage this resource and create
+other external resources to handle the semantics of that resource. Those
+external resources should not live forever once the custom resource does not
+exist anymore.</p>
+<p>In the following text we’ll work with a custom resource example that represents
+a data service instance. That data service instance could be, for example an
+instance running a PostgreSQL database. That service instance might store data
+to an external blob store, for instance AWS S3 during a backup operation. Once
+you want to get rid of this custom resource and therefore that service
+instance, you might want to clean up the backups that were created specifically
+for this data service instance (for example on AWS S3).</p>
+<p>This is where <a href="https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/#finalizers">Kubernetes Finalizers</a>
+come into play and help to clean up external resources before the deletion of a
+custom resource. You can add finalizers to a custom resource which will
+prevent for example the kubectl tool from deleting it.</p>
+<h1 id="demo">Demo</h1>
+<p>Let’s do a practical demo with <a href="https://kubernetes.io/docs/tasks/tools/install-minikube/">Minikube</a>
+on how finalizers can help to prevent the deletion of custom resources.</p>
+<p>You can install Minikube using the <a href="https://kubernetes.io/docs/tasks/tools/install-minikube/">Install Minikube instructions</a>.
+Once it is up and running, you should be able to call <code>kubectl get crd</code> without
+an error.</p>
+<p>In order to create a custom resource, we first need to create a custom resource definition.
+Please copy the following content to a file named <code>customresourcedefinition.yaml</code>:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#fff;font-weight:bold">apiVersion</span>: apiextensions.k8s.io/v1
+<span style="color:#fff;font-weight:bold">kind</span>: CustomResourceDefinition
+<span style="color:#fff;font-weight:bold">metadata</span>:
+  <span style="color:#fff;font-weight:bold">name</span>: serviceinstances.example.com
+<span style="color:#fff;font-weight:bold">spec</span>:
+  <span style="color:#fff;font-weight:bold">group</span>: example.com
+  <span style="color:#fff;font-weight:bold">versions</span>:
+    - <span style="color:#fff;font-weight:bold">name</span>: v1
+      <span style="color:#fff;font-weight:bold">served</span>: <span style="color:#fff;font-weight:bold">true</span>
+      <span style="color:#fff;font-weight:bold">storage</span>: <span style="color:#fff;font-weight:bold">true</span>
+      <span style="color:#fff;font-weight:bold">schema</span>:
+        <span style="color:#fff;font-weight:bold">openAPIV3Schema</span>:
+          <span style="color:#fff;font-weight:bold">type</span>: object
+          <span style="color:#fff;font-weight:bold">properties</span>:
+            <span style="color:#fff;font-weight:bold">spec</span>:
+              <span style="color:#fff;font-weight:bold">type</span>: object
+              <span style="color:#fff;font-weight:bold">properties</span>:
+                <span style="color:#fff;font-weight:bold">service</span>:
+                  <span style="color:#fff;font-weight:bold">type</span>: string
+                <span style="color:#fff;font-weight:bold">version</span>:
+                  <span style="color:#fff;font-weight:bold">type</span>: string
+  <span style="color:#fff;font-weight:bold">scope</span>: Namespaced
+  <span style="color:#fff;font-weight:bold">names</span>:
+    <span style="color:#fff;font-weight:bold">plural</span>: serviceinstances
+    <span style="color:#fff;font-weight:bold">singular</span>: serviceinstance
+    <span style="color:#fff;font-weight:bold">kind</span>: ServiceInstance
+    <span style="color:#fff;font-weight:bold">shortNames</span>:
+    - si
+</code></pre></div><p>It is a custom resource definition for the above-mentioned example of
+PostgreSQL service instances.</p>
+<p>After creating the file, we’re ready to upload our custom resource definition to Kubernetes:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ kubectl apply -f customresourcedefinition.yaml
+customresourcedefinition.apiextensions.k8s.io/serviceinstances.example.com created
+</code></pre></div><p>Next we’ll create a custom resource fitting our custom resource definition.
+Create the following content in a file named <code>customresource0.yaml</code>:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#fff;font-weight:bold">apiVersion</span>: <span style="color:#0ff;font-weight:bold">&#34;example.com/v1&#34;</span>
+<span style="color:#fff;font-weight:bold">kind</span>: ServiceInstance
+<span style="color:#fff;font-weight:bold">metadata</span>:
+  <span style="color:#fff;font-weight:bold">name</span>: my-new-service-instance0
+  <span style="color:#fff;font-weight:bold">finalizers</span>:
+  - my-finalizer.example.com
+<span style="color:#fff;font-weight:bold">spec</span>:
+  <span style="color:#fff;font-weight:bold">service</span>: PostgreSQL
+  <span style="color:#fff;font-weight:bold">version</span>: <span style="color:#0ff;font-weight:bold">&#34;12&#34;</span>
+</code></pre></div><p>Then we apply the custom resource using:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ kubectl apply -f customresource0.yaml
+serviceinstance.example.com/my-new-service-instance0 created
+</code></pre></div><p>Under <code>metadata.finalizers</code> we’ve added an entry for a finalizer called
+<code>my-finalizer.example.com</code>.</p>
+<p>So far this doesn’t play a role and a new ServiceInstance resource has been
+created with the name <code>my-custom-resource0</code>.</p>
+<p>We can get the resource’s yaml representation using:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ kubectl get si my-new-service-instance0 -o yaml
+...
+apiVersion: example.com/v1
+kind: ServiceInstance
+metadata:
+  ...
+  creationTimestamp: <span style="color:#0ff;font-weight:bold">&#34;2020-09-09T21:36:56Z&#34;</span>
+  finalizers:
+  - my-finalizer.example.com
+  ...
+  name: my-new-service-instance0
+  ...
+spec:
+  service: PostgreSQL
+  version: <span style="color:#0ff;font-weight:bold">&#34;12&#34;</span>
+</code></pre></div><p>Let&rsquo;s try to delete the resource using:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ kubectl delete -f customresource0.yaml
+serviceinstance.example.com <span style="color:#0ff;font-weight:bold">&#34;my-new-service-instance0&#34;</span> deleted
+</code></pre></div><p>After outputting the delete line, kubectl is hanging.</p>
+<p>In another shell we can now output the yaml representation of that custom
+resource again using:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ kubectl get si my-new-service-instance0 -o yaml
+apiVersion: example.com/v1
+kind: ServiceInstance
+metadata:
+  ...
+  deletionTimestamp: <span style="color:#0ff;font-weight:bold">&#34;2020-09-09T21:52:00Z&#34;</span>
+  ...
+</code></pre></div><p>Kubernetes has added the field <code>metadata.deletionTimestamp</code> to signal the
+intention is to delete that resource. The finalizer entry we’ve added is
+preventing Kubernetes from deleting that custom resource.</p>
+<p>In order to get rid of the resource, we need to remove the finalizer entry and
+signal this way we’ve removed external resources locked by that finalizer name.</p>
+<p>Let’s edit the file <code>customresource0.yaml</code> and remove the finalizer. The file
+should now look similar to the following content:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#fff;font-weight:bold">apiVersion</span>: <span style="color:#0ff;font-weight:bold">&#34;example.com/v1&#34;</span>
+<span style="color:#fff;font-weight:bold">kind</span>: ServiceInstance
+<span style="color:#fff;font-weight:bold">metadata</span>:
+  <span style="color:#fff;font-weight:bold">name</span>: my-new-service-instance0
+<span style="color:#fff;font-weight:bold">spec</span>:
+  <span style="color:#fff;font-weight:bold">service</span>: PostgreSQL
+  <span style="color:#fff;font-weight:bold">version</span>: <span style="color:#0ff;font-weight:bold">&#34;12&#34;</span>
+</code></pre></div><p>Let’s apply the changes:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ kubectl apply -f customresource0.yaml
+serviceinstance.example.com/my-new-service-instance0 configured
+</code></pre></div><p>When we switch back to the hanging <code>kubectl</code> command, we can see it succeeded.
+The custom resource has been removed since the list of finalizers is empty.</p>
+<p>The implications for Kubernetes are that all finalizers have been executed and
+have done their job.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>Specifying finalizers can prevent a custom resource from deletion. This gives
+the opportunity to clean up external resources associated with the custom
+resource.</p>
+<p>In a future article, we’ll extend our knowledge to Kubernetes operators and how
+to protect custom resources with finalizers during reconciliation.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+      
+        ©
+        
+          2019 -
+        
+        2020
+         Robert Gogolok 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+    </section>
+  </footer>
+
+    </main>
+
+    
+      
+      <script src="https://gogolok.github.io/js/dark-mode.min.0213e1773e6d1c5a644f847c67a6f8abac49a3776e2976f6008038af8c5b76a1.js"></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+  </body>
+
+</html>
