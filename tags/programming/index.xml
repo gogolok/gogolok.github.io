@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programming on gogolok</title>
+    <link>https://gogolok.github.io/tags/programming/</link>
+    <description>Recent content in Programming on gogolok</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 12 Sep 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://gogolok.github.io/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Happy Programmer&#39;s Day 2020</title>
+      <link>https://gogolok.github.io/posts/happy-programmers-day-2020/</link>
+      <pubDate>Sat, 12 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://gogolok.github.io/posts/happy-programmers-day-2020/</guid>
+      <description>I love programming.
+A long time ago in a galaxy far, far away &amp;hellip; I’ve got a Nintendo NES. It was nice to play Super Mario, Mega Man, and other classic games, but the games were rather expensive. So I convinced my parents to buy an even more expensive personal computer (PC). Games for the PC were also expensive, so I looked into other stuff I can do with a PC.</description>
+    </item>
+    
+  </channel>
+</rss>
