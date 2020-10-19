@@ -62,7 +62,7 @@
     <link rel="icon" type="image/png" href="https://gogolok.github.io/images/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://gogolok.github.io/images/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.74.3" />
+    <meta name="generator" content="Hugo 0.76.5" />
   </head>
   
   
@@ -162,6 +162,11 @@ like custom controllers . The controller will manage this resource and create
 other external resources to handle the semantics of that resource. Those
 external resources should not live forever once the custom resource does not
 exist anymore.</p>
+<figure>
+    <img src="container.jpg"
+         alt="Shipping Container"/> 
+</figure>
+
 <p>In the following text we’ll work with a custom resource example that represents
 a data service instance. That data service instance could be, for example an
 instance running a PostgreSQL database. That service instance might store data
@@ -181,33 +186,33 @@ Once it is up and running, you should be able to call <code>kubectl get crd</cod
 an error.</p>
 <p>In order to create a custom resource, we first need to create a custom resource definition.
 Please copy the following content to a file named <code>customresourcedefinition.yaml</code>:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#fff;font-weight:bold">apiVersion</span>: apiextensions.k8s.io/v1
-<span style="color:#fff;font-weight:bold">kind</span>: CustomResourceDefinition
-<span style="color:#fff;font-weight:bold">metadata</span>:
-  <span style="color:#fff;font-weight:bold">name</span>: serviceinstances.example.com
-<span style="color:#fff;font-weight:bold">spec</span>:
-  <span style="color:#fff;font-weight:bold">group</span>: example.com
-  <span style="color:#fff;font-weight:bold">versions</span>:
-    - <span style="color:#fff;font-weight:bold">name</span>: v1
-      <span style="color:#fff;font-weight:bold">served</span>: <span style="color:#fff;font-weight:bold">true</span>
-      <span style="color:#fff;font-weight:bold">storage</span>: <span style="color:#fff;font-weight:bold">true</span>
-      <span style="color:#fff;font-weight:bold">schema</span>:
-        <span style="color:#fff;font-weight:bold">openAPIV3Schema</span>:
-          <span style="color:#fff;font-weight:bold">type</span>: object
-          <span style="color:#fff;font-weight:bold">properties</span>:
-            <span style="color:#fff;font-weight:bold">spec</span>:
-              <span style="color:#fff;font-weight:bold">type</span>: object
-              <span style="color:#fff;font-weight:bold">properties</span>:
-                <span style="color:#fff;font-weight:bold">service</span>:
-                  <span style="color:#fff;font-weight:bold">type</span>: string
-                <span style="color:#fff;font-weight:bold">version</span>:
-                  <span style="color:#fff;font-weight:bold">type</span>: string
-  <span style="color:#fff;font-weight:bold">scope</span>: Namespaced
-  <span style="color:#fff;font-weight:bold">names</span>:
-    <span style="color:#fff;font-weight:bold">plural</span>: serviceinstances
-    <span style="color:#fff;font-weight:bold">singular</span>: serviceinstance
-    <span style="color:#fff;font-weight:bold">kind</span>: ServiceInstance
-    <span style="color:#fff;font-weight:bold">shortNames</span>:
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="font-weight:bold">apiVersion</span>: apiextensions.k8s.io/v1
+<span style="font-weight:bold">kind</span>: CustomResourceDefinition
+<span style="font-weight:bold">metadata</span>:
+  <span style="font-weight:bold">name</span>: serviceinstances.example.com
+<span style="font-weight:bold">spec</span>:
+  <span style="font-weight:bold">group</span>: example.com
+  <span style="font-weight:bold">versions</span>:
+    - <span style="font-weight:bold">name</span>: v1
+      <span style="font-weight:bold">served</span>: <span style="color:#fff;font-weight:bold">true</span>
+      <span style="font-weight:bold">storage</span>: <span style="color:#fff;font-weight:bold">true</span>
+      <span style="font-weight:bold">schema</span>:
+        <span style="font-weight:bold">openAPIV3Schema</span>:
+          <span style="font-weight:bold">type</span>: object
+          <span style="font-weight:bold">properties</span>:
+            <span style="font-weight:bold">spec</span>:
+              <span style="font-weight:bold">type</span>: object
+              <span style="font-weight:bold">properties</span>:
+                <span style="font-weight:bold">service</span>:
+                  <span style="font-weight:bold">type</span>: string
+                <span style="font-weight:bold">version</span>:
+                  <span style="font-weight:bold">type</span>: string
+  <span style="font-weight:bold">scope</span>: Namespaced
+  <span style="font-weight:bold">names</span>:
+    <span style="font-weight:bold">plural</span>: serviceinstances
+    <span style="font-weight:bold">singular</span>: serviceinstance
+    <span style="font-weight:bold">kind</span>: ServiceInstance
+    <span style="font-weight:bold">shortNames</span>:
     - si
 </code></pre></div><p>It is a custom resource definition for the above-mentioned example of
 PostgreSQL service instances.</p>
@@ -216,15 +221,15 @@ PostgreSQL service instances.</p>
 customresourcedefinition.apiextensions.k8s.io/serviceinstances.example.com created
 </code></pre></div><p>Next we’ll create a custom resource fitting our custom resource definition.
 Create the following content in a file named <code>customresource0.yaml</code>:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#fff;font-weight:bold">apiVersion</span>: <span style="color:#0ff;font-weight:bold">&#34;example.com/v1&#34;</span>
-<span style="color:#fff;font-weight:bold">kind</span>: ServiceInstance
-<span style="color:#fff;font-weight:bold">metadata</span>:
-  <span style="color:#fff;font-weight:bold">name</span>: my-new-service-instance0
-  <span style="color:#fff;font-weight:bold">finalizers</span>:
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="font-weight:bold">apiVersion</span>: <span style="color:#0ff;font-weight:bold">&#34;example.com/v1&#34;</span>
+<span style="font-weight:bold">kind</span>: ServiceInstance
+<span style="font-weight:bold">metadata</span>:
+  <span style="font-weight:bold">name</span>: my-new-service-instance0
+  <span style="font-weight:bold">finalizers</span>:
   - my-finalizer.example.com
-<span style="color:#fff;font-weight:bold">spec</span>:
-  <span style="color:#fff;font-weight:bold">service</span>: PostgreSQL
-  <span style="color:#fff;font-weight:bold">version</span>: <span style="color:#0ff;font-weight:bold">&#34;12&#34;</span>
+<span style="font-weight:bold">spec</span>:
+  <span style="font-weight:bold">service</span>: PostgreSQL
+  <span style="font-weight:bold">version</span>: <span style="color:#0ff;font-weight:bold">&#34;12&#34;</span>
 </code></pre></div><p>Then we apply the custom resource using:</p>
 <div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ kubectl apply -f customresource0.yaml
 serviceinstance.example.com/my-new-service-instance0 created
@@ -268,13 +273,13 @@ preventing Kubernetes from deleting that custom resource.</p>
 signal this way we’ve removed external resources locked by that finalizer name.</p>
 <p>Let’s edit the file <code>customresource0.yaml</code> and remove the finalizer. The file
 should now look similar to the following content:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#fff;font-weight:bold">apiVersion</span>: <span style="color:#0ff;font-weight:bold">&#34;example.com/v1&#34;</span>
-<span style="color:#fff;font-weight:bold">kind</span>: ServiceInstance
-<span style="color:#fff;font-weight:bold">metadata</span>:
-  <span style="color:#fff;font-weight:bold">name</span>: my-new-service-instance0
-<span style="color:#fff;font-weight:bold">spec</span>:
-  <span style="color:#fff;font-weight:bold">service</span>: PostgreSQL
-  <span style="color:#fff;font-weight:bold">version</span>: <span style="color:#0ff;font-weight:bold">&#34;12&#34;</span>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="font-weight:bold">apiVersion</span>: <span style="color:#0ff;font-weight:bold">&#34;example.com/v1&#34;</span>
+<span style="font-weight:bold">kind</span>: ServiceInstance
+<span style="font-weight:bold">metadata</span>:
+  <span style="font-weight:bold">name</span>: my-new-service-instance0
+<span style="font-weight:bold">spec</span>:
+  <span style="font-weight:bold">service</span>: PostgreSQL
+  <span style="font-weight:bold">version</span>: <span style="color:#0ff;font-weight:bold">&#34;12&#34;</span>
 </code></pre></div><p>Let’s apply the changes:</p>
 <div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ kubectl apply -f customresource0.yaml
 serviceinstance.example.com/my-new-service-instance0 configured

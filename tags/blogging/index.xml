@@ -6,11 +6,7 @@
     <description>Recent content in Blogging on gogolok</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 20 Aug 2018 23:52:39 +0200</lastBuildDate>
-    
-	<atom:link href="https://gogolok.github.io/tags/blogging/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 20 Aug 2018 23:52:39 +0200</lastBuildDate><atom:link href="https://gogolok.github.io/tags/blogging/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Switched to Hugo</title>
       <link>https://gogolok.github.io/posts/switched-to-hugo/</link>
