@@ -6,7 +6,17 @@
     <description>Recent content on gogolok</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 12 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://gogolok.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://gogolok.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kubernetes: Finalizers and Custom Controllers</title>
+      <link>https://gogolok.github.io/posts/kubernetes-finalizers-and-custom-controllers/</link>
+      <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://gogolok.github.io/posts/kubernetes-finalizers-and-custom-controllers/</guid>
+      <description>Authors  Matthew Doherty Philipp Kuntz Robert Gogolok  Introduction In the last blog post we provided an introduction to Kubernetes Finalizers. In the introduction we covered the basic mechanics of how finalizers allow controllers to implement asynchronous pre-delete hooks. Simply put they inform the Kubernetes control plane that an action needs to take place before Kubernetes garbage collection logic can be performed.
+In this blog post we take finalizers a step further by performing the resulting actions of a resource deletion with the help of a custom controller.</description>
+    </item>
+    
     <item>
       <title>Happy Programmer&#39;s Day 2020</title>
       <link>https://gogolok.github.io/posts/happy-programmers-day-2020/</link>
