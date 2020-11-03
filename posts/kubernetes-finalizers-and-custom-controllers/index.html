@@ -68,7 +68,7 @@ In the introduction we covered the basic mechanics of how finalizers allow contr
     <link rel="icon" type="image/png" href="https://gogolok.github.io/images/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://gogolok.github.io/images/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.76.5" />
+    <meta name="generator" content="Hugo 0.77.0" />
   </head>
   
   
@@ -224,12 +224,12 @@ described in the demo section. For verbosity we provide the
     <span style="color:#007f7f"># shortNames allow shorter string to match your resource on the CLI</span>
     <span style="font-weight:bold">shortNames</span>:
     - si
-</code></pre></div><p>In this blog post we will be using a <a href="https://github.com/mkfdoherty/finalizers/">custom controller</a>
+</code></pre></div><p>In this blog post we will be using a <a href="https://github.com/gogolok/kubernetes-controller-finalizers-example">custom controller</a>
 to demonstrate how a controller can perform an action when notified about the
 pending deletion of a service instance.</p>
 <p>To use, clone the repository</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git clone https://github.com/mkfdoherty/finalizers.git
-<span style="color:#fff;font-weight:bold">cd</span> finalizers
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git clone https://github.com/gogolok/kubernetes-controller-finalizers-example.git
+<span style="color:#fff;font-weight:bold">cd</span> kubernetes-controller-finalizers-example
 </code></pre></div><p>and start the controller via:</p>
 <div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">make install &amp;&amp; make run ENABLE_WEBHOOKS=<span style="color:#fff;font-weight:bold">false</span>
 </code></pre></div><p>This will run the custom controller that is associated with our custom
