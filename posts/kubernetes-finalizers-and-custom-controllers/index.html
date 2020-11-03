@@ -258,8 +258,9 @@ finalizer during the first iteration of its reconcile loop.</p>
 serviceinstance.example.com/my-new-service-instance0 created
 </code></pre></div><p>The running controller adds the finalizer to the custom resource under the <code>metadata.finalizers</code> field.
 The finalizer is named <code>my-finalizer.example.com</code>. This can be seen after applying the resource with
-the following command: <code>kubectl get serviceinstance -o yaml</code>.</p>
-<p>You should now see the following included in the custom resource indicating
+the following command:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">kubectl get serviceinstance -o yaml
+</code></pre></div><p>You should now see the following included in the custom resource indicating
 that the controller has taken responsibility for the resource by inserting the
 finalizer into the resource of the <code>serviceinstance</code>.</p>
 <div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">...
