@@ -151,6 +151,18 @@ My favorite talk at the conference was “JRuby, dudes!” by Charles Nutter.</d
     </item>
     
     <item>
+      <title>bcfg2 - Talk and Paper</title>
+      <link>https://gogolok.github.io/posts/bcfg2-talk-and-paper/</link>
+      <pubDate>Thu, 01 Mar 2007 00:00:00 +0000</pubDate>
+      
+      <guid>https://gogolok.github.io/posts/bcfg2-talk-and-paper/</guid>
+      <description>Gave a talk with Marko Jung in german about bcfg2. The talk was part of the GUUG-Frühjahrsfachgespräch 2007 in Berlin.
+The german abstract says:
+Bcfg2 hilft Systemadministratoren eine konsistente, reproduzierbare und verifizierbare Spezifikation ihrer Systemumgebung zu erstellen und bietet mit Visualisierungs- und Reporting-Tools notwendige Werkzeuge für alltägliche administrative Aufgaben.
+Das distributions- und plattformübergreifende Tool basiert auf einem Modell, in welchem die Systembeschreibung verwendet werden kann, um den Status von Systemen zu validieren und (optional) anzupassen.</description>
+    </item>
+    
+    <item>
       <title>Bilder von Spiesen, Saarland, Deutschland</title>
       <link>https://gogolok.github.io/spiesen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
