@@ -231,7 +231,21 @@ $ <span style="color:#fff;font-weight:bold">echo</span> <span style="color:#0ff;
 
 $ rbenv install 2.7.3
 $ rbenv global 2.7.3
-</code></pre></div>
+</code></pre></div><h3 id="rails">Rails</h3>
+<p>Compilation dependencies (sqlite3):</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">pkg install sqlite3 node yarn
+</code></pre></div><div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">gem install rails
+</code></pre></div><div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">bundle config build.sqlite3 --with-sqlite3-include=/usr/local/include --with-sqlite3-lib=/usr/local/lib
+
+rails new myapp
+<span style="color:#fff;font-weight:bold">cd</span> myapp
+bin/rails server
+</code></pre></div><h3 id="issues">Issues</h3>
+<ul>
+<li>Puma had in the past an issue: <a href="https://github.com/puma/puma/commit/15b079439222e489915380021b9dca7b9fa5ff65">https://github.com/puma/puma/commit/15b079439222e489915380021b9dca7b9fa5ff65</a>
+Should be fixed with puma gem version ``.</li>
+</ul>
+
       </div>
 
 
