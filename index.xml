@@ -6,7 +6,19 @@
     <description>Recent content on gogolok</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 25 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://gogolok.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://gogolok.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Freebsd 13 Setup</title>
+      <link>https://gogolok.github.io/posts/my-freebsd-13-setup/</link>
+      <pubDate>Sun, 25 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://gogolok.github.io/posts/my-freebsd-13-setup/</guid>
+      <description>From time to time I&amp;rsquo;m doing some stuff on FreeBSD. I still like it for its simplicity (I&amp;rsquo;m old and Linux is progressing way to fast ;-).
+I&amp;rsquo;m keeping some notes how to set up FreeBSD manually in this blog post. For newer versions of FreeBSD I&amp;rsquo;ll create a new post.
+Disadvantages:
+ manual setup  Update to Latest Stable Version After a fresh install, we first apply latest updates to the current FreeBSD version.</description>
+    </item>
+    
     <item>
       <title>Kubernetes: Finalizers and Custom Controllers</title>
       <link>https://gogolok.github.io/posts/kubernetes-finalizers-and-custom-controllers/</link>
