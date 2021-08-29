@@ -20,8 +20,8 @@
 <meta property="og:description" content="Authors  Matthew Doherty Philipp Kuntz Robert Gogolok  Introduction When extending the Kubernetes API with CustomResourceDefinitions you’ll come across the dilemma to clean up external resources when deleting a custom resource. Although you can create a custom resource simply to store and retrieve structured data, most of the time there is some entity involved, like custom controllers . The controller will manage this resource and create other external resources to handle the semantics of that resource." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://gogolok.github.io/posts/kubernetes-finalizers-in-custom-resources/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2020-09-10T00:00:00&#43;00:00" />
-<meta property="article:modified_time" content="2020-09-10T00:00:00&#43;00:00" />
+<meta property="article:published_time" content="2020-09-10T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-09-10T00:00:00+00:00" />
 
 
 
@@ -63,7 +63,7 @@
     <link rel="icon" type="image/png" href="https://gogolok.github.io/images/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://gogolok.github.io/images/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.82.1" />
+    <meta name="generator" content="Hugo 0.87.0" />
   </head>
   
   
@@ -163,9 +163,8 @@ like custom controllers . The controller will manage this resource and create
 other external resources to handle the semantics of that resource. Those
 external resources should not live forever once the custom resource does not
 exist anymore.</p>
-<figure>
-    <img src="container.jpg"
-         alt="Shipping Container"/> 
+<figure><img src="container.jpg"
+         alt="Shipping Container"/>
 </figure>
 
 <p>In the following text we’ll work with a custom resource example that represents
@@ -187,7 +186,7 @@ Once it is up and running, you should be able to call <code>kubectl get crd</cod
 an error.</p>
 <p>In order to create a custom resource, we first need to create a custom resource definition.
 Please copy the following content to a file named <code>customresourcedefinition.yaml</code>:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="font-weight:bold">apiVersion</span>: apiextensions.k8s.io/v1
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="font-weight:bold">apiVersion</span>: apiextensions.k8s.io/v1
 <span style="font-weight:bold">kind</span>: CustomResourceDefinition
 <span style="font-weight:bold">metadata</span>:
   <span style="font-weight:bold">name</span>: serviceinstances.example.com
@@ -218,11 +217,11 @@ Please copy the following content to a file named <code>customresourcedefinition
 </code></pre></div><p>It is a custom resource definition for the above-mentioned example of
 PostgreSQL service instances.</p>
 <p>After creating the file, we’re ready to upload our custom resource definition to Kubernetes:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ kubectl apply -f customresourcedefinition.yaml
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ kubectl apply -f customresourcedefinition.yaml
 customresourcedefinition.apiextensions.k8s.io/serviceinstances.example.com created
 </code></pre></div><p>Next we’ll create a custom resource fitting our custom resource definition.
 Create the following content in a file named <code>customresource0.yaml</code>:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="font-weight:bold">apiVersion</span>: <span style="color:#0ff;font-weight:bold">&#34;example.com/v1&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="font-weight:bold">apiVersion</span>: <span style="color:#0ff;font-weight:bold">&#34;example.com/v1&#34;</span>
 <span style="font-weight:bold">kind</span>: ServiceInstance
 <span style="font-weight:bold">metadata</span>:
   <span style="font-weight:bold">name</span>: my-new-service-instance0
@@ -232,14 +231,14 @@ Create the following content in a file named <code>customresource0.yaml</code>:<
   <span style="font-weight:bold">service</span>: PostgreSQL
   <span style="font-weight:bold">version</span>: <span style="color:#0ff;font-weight:bold">&#34;12&#34;</span>
 </code></pre></div><p>Then we apply the custom resource using:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ kubectl apply -f customresource0.yaml
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ kubectl apply -f customresource0.yaml
 serviceinstance.example.com/my-new-service-instance0 created
 </code></pre></div><p>Under <code>metadata.finalizers</code> we’ve added an entry for a finalizer called
 <code>my-finalizer.example.com</code>.</p>
 <p>So far this doesn’t play a role and a new ServiceInstance resource has been
 created with the name <code>my-custom-resource0</code>.</p>
 <p>We can get the resource’s yaml representation using:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ kubectl get si my-new-service-instance0 -o yaml
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ kubectl get si my-new-service-instance0 -o yaml
 ...
 apiVersion: example.com/v1
 kind: ServiceInstance
@@ -255,12 +254,12 @@ spec:
   service: PostgreSQL
   version: <span style="color:#0ff;font-weight:bold">&#34;12&#34;</span>
 </code></pre></div><p>Let&rsquo;s try to delete the resource using:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ kubectl delete -f customresource0.yaml
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ kubectl delete -f customresource0.yaml
 serviceinstance.example.com <span style="color:#0ff;font-weight:bold">&#34;my-new-service-instance0&#34;</span> deleted
 </code></pre></div><p>After outputting the delete line, kubectl is hanging.</p>
 <p>In another shell we can now output the yaml representation of that custom
 resource again using:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ kubectl get si my-new-service-instance0 -o yaml
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ kubectl get si my-new-service-instance0 -o yaml
 apiVersion: example.com/v1
 kind: ServiceInstance
 metadata:
@@ -274,7 +273,7 @@ preventing Kubernetes from deleting that custom resource.</p>
 signal this way we’ve removed external resources locked by that finalizer name.</p>
 <p>Let’s edit the file <code>customresource0.yaml</code> and remove the finalizer. The file
 should now look similar to the following content:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="font-weight:bold">apiVersion</span>: <span style="color:#0ff;font-weight:bold">&#34;example.com/v1&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="font-weight:bold">apiVersion</span>: <span style="color:#0ff;font-weight:bold">&#34;example.com/v1&#34;</span>
 <span style="font-weight:bold">kind</span>: ServiceInstance
 <span style="font-weight:bold">metadata</span>:
   <span style="font-weight:bold">name</span>: my-new-service-instance0
@@ -282,7 +281,7 @@ should now look similar to the following content:</p>
   <span style="font-weight:bold">service</span>: PostgreSQL
   <span style="font-weight:bold">version</span>: <span style="color:#0ff;font-weight:bold">&#34;12&#34;</span>
 </code></pre></div><p>Let’s apply the changes:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ kubectl apply -f customresource0.yaml
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ kubectl apply -f customresource0.yaml
 serviceinstance.example.com/my-new-service-instance0 configured
 </code></pre></div><p>When we switch back to the hanging <code>kubectl</code> command, we can see it succeeded.
 The custom resource has been removed since the list of finalizers is empty.</p>

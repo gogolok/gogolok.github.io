@@ -27,7 +27,7 @@ Disadvantages:
       <guid>https://gogolok.github.io/posts/kubernetes-finalizers-and-custom-controllers/</guid>
       <description>Authors  Matthew Doherty Philipp Kuntz Robert Gogolok  Introduction In the last blog post we provided an introduction to Kubernetes Finalizers.
 In the introduction we covered the basic mechanics of how finalizers allow controllers to implement asynchronous pre-delete hooks. Simply put they inform the Kubernetes control plane that an action needs to take place before Kubernetes garbage collection logic can be performed.
-  https://unsplash.com/@frankiefoto   In this blog post we take finalizers a step further by performing the resulting actions of a resource deletion with the help of a custom controller.</description>
+ https://unsplash.com/@frankiefoto   In this blog post we take finalizers a step further by performing the resulting actions of a resource deletion with the help of a custom controller.</description>
     </item>
     
     <item>
@@ -180,7 +180,7 @@ Das distributions- und plattformübergreifende Tool basiert auf einem Modell, in
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://gogolok.github.io/spiesen/</guid>
-      <description>Ein Blick auf das Tal, wenn es aufwacht.   Ein Blick von der Straße Mühlentalblick auf den Fußballplatz.   </description>
+      <description>Ein Blick auf das Tal, wenn es aufwacht.  Ein Blick von der Straße Mühlentalblick auf den Fußballplatz.  </description>
     </item>
     
     <item>

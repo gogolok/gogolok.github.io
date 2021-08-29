@@ -20,8 +20,8 @@
 <meta property="og:description" content="# Gemfile source &#39;https://rubygems.org&#39; gem &#39;sinatra&#39;, &#39;1.4.5&#39; gem &#39;activesupport&#39;, &#39;4.1.4&#39; # app.rb require &#39;active_support/all&#39; require &#39;sinatra&#39; Time::DATE_FORMATS[:my_datetime] = &#34;%Y-%m-%d Hour: %H Minute: %M Second: %S&#34; get &#39;/&#39; do Time.now.to_s(:my_datetime) end https://gist.github.com/gogolok/5877734" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://gogolok.github.io/posts/how-to-use-activesupport-within-sinatra/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2014-08-15T23:36:32&#43;02:00" />
-<meta property="article:modified_time" content="2014-08-15T23:36:32&#43;02:00" />
+<meta property="article:published_time" content="2014-08-15T23:36:32+02:00" />
+<meta property="article:modified_time" content="2014-08-15T23:36:32+02:00" />
 
 
 
@@ -63,7 +63,7 @@
     <link rel="icon" type="image/png" href="https://gogolok.github.io/images/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://gogolok.github.io/images/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.82.1" />
+    <meta name="generator" content="Hugo 0.87.0" />
   </head>
   
   
@@ -150,12 +150,12 @@
 
       <div>
         
-        <div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#007f7f"># Gemfile</span>
+        <div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#007f7f"># Gemfile</span>
 source <span style="color:#0ff;font-weight:bold">&#39;https://rubygems.org&#39;</span>
 
 gem <span style="color:#0ff;font-weight:bold">&#39;sinatra&#39;</span>, <span style="color:#0ff;font-weight:bold">&#39;1.4.5&#39;</span>
 gem <span style="color:#0ff;font-weight:bold">&#39;activesupport&#39;</span>, <span style="color:#0ff;font-weight:bold">&#39;4.1.4&#39;</span></code></pre></div>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#007f7f"># app.rb</span>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#007f7f"># app.rb</span>
 <span style="color:#fff;font-weight:bold">require</span> <span style="color:#0ff;font-weight:bold">&#39;active_support/all&#39;</span>
 <span style="color:#fff;font-weight:bold">require</span> <span style="color:#0ff;font-weight:bold">&#39;sinatra&#39;</span>
 
