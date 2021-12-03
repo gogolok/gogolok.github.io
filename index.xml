@@ -16,7 +16,7 @@
       <description>From time to time I&amp;rsquo;m doing some stuff on FreeBSD. I still like it for its simplicity (I&amp;rsquo;m old and Linux is progressing way to fast ;-).
 I&amp;rsquo;m keeping some notes how to set up FreeBSD manually in this blog post. For newer versions of FreeBSD I&amp;rsquo;ll create a new post.
 Disadvantages:
- manual setup  Update to Latest Stable Version After a fresh install, we first apply latest updates to the current FreeBSD version.</description>
+ manual setup  Update to Latest Stable Version    After a fresh install, we first apply latest updates to the current FreeBSD version.</description>
     </item>
     
     <item>
@@ -25,9 +25,9 @@ Disadvantages:
       <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://gogolok.github.io/posts/kubernetes-finalizers-and-custom-controllers/</guid>
-      <description>Authors  Matthew Doherty Philipp Kuntz Robert Gogolok  Introduction In the last blog post we provided an introduction to Kubernetes Finalizers.
+      <description>Authors     Matthew Doherty Philipp Kuntz Robert Gogolok  Introduction    In the last blog post we provided an introduction to Kubernetes Finalizers.
 In the introduction we covered the basic mechanics of how finalizers allow controllers to implement asynchronous pre-delete hooks. Simply put they inform the Kubernetes control plane that an action needs to take place before Kubernetes garbage collection logic can be performed.
- https://unsplash.com/@frankiefoto   In this blog post we take finalizers a step further by performing the resulting actions of a resource deletion with the help of a custom controller.</description>
+ https://unsplash.</description>
     </item>
     
     <item>
@@ -46,7 +46,7 @@ A long time ago in a galaxy far, far away &amp;hellip; I’ve got a Nintendo NES
       <pubDate>Thu, 10 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>https://gogolok.github.io/posts/kubernetes-finalizers-in-custom-resources/</guid>
-      <description>Authors  Matthew Doherty Philipp Kuntz Robert Gogolok  Introduction When extending the Kubernetes API with CustomResourceDefinitions you’ll come across the dilemma to clean up external resources when deleting a custom resource. Although you can create a custom resource simply to store and retrieve structured data, most of the time there is some entity involved, like custom controllers . The controller will manage this resource and create other external resources to handle the semantics of that resource.</description>
+      <description>Authors     Matthew Doherty Philipp Kuntz Robert Gogolok  Introduction    When extending the Kubernetes API with CustomResourceDefinitions you’ll come across the dilemma to clean up external resources when deleting a custom resource. Although you can create a custom resource simply to store and retrieve structured data, most of the time there is some entity involved, like custom controllers . The controller will manage this resource and create other external resources to handle the semantics of that resource.</description>
     </item>
     
     <item>
@@ -56,13 +56,13 @@ A long time ago in a galaxy far, far away &amp;hellip; I’ve got a Nintendo NES
       
       <guid>https://gogolok.github.io/posts/my-iterm2-setup/</guid>
       <description>I extend the default installation of iTerm2 in the following ways.
-Key Shortcuts Move Cusrsor One Worl Left Keyboard shortcut: option + left arrow
+Key Shortcuts    Move Cusrsor One Worl Left    Keyboard shortcut: option + left arrow
 Action: Send Hex Code
 Code: 0x1b 0x62
-Move Cusrsor One Worl Right Keyboard shortcut: option + right arrow
+Move Cusrsor One Worl Right    Keyboard shortcut: option + right arrow
 Action: Send Hex Code
 Code: 0x1b 0x66
-Colors I use the Selenized color palette.</description>
+Colors    I use the Selenized color palette.</description>
     </item>
     
     <item>
@@ -74,7 +74,7 @@ Colors I use the Selenized color palette.</description>
       <description>From time to time I&amp;rsquo;m doing some stuff on FreeBSD. I still like it for its simplicity (I&amp;rsquo;m old and Linux is progressing way to fast ;-).
 I&amp;rsquo;m keeping some notes how to set up FreeBSD manually in this blog post. For newer versions of FreeBSD I&amp;rsquo;ll create a new post.
 Disadvantages:
- manual setup  Update to Latest Stable Version # freebsd-update fetch install # shutdown -r now # pkg The package management tool is not yet installed on your system.</description>
+ manual setup  Update to Latest Stable Version    # freebsd-update fetch install # shutdown -r now # pkg The package management tool is not yet installed on your system.</description>
     </item>
     
     <item>
@@ -189,12 +189,12 @@ Das distributions- und plattformübergreifende Tool basiert auf einem Modell, in
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://gogolok.github.io/about/</guid>
-      <description>Impressum Angaben gemäß § 5 TMG
+      <description>Impressum    Angaben gemäß § 5 TMG
 Robert Gogolok Kontakt:
 E-Mail: robertgogolok@yahoo.de Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
 Robert Gogolok Haftungsausschluss:
 Haftung für Links
-Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft.</description>
+Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.</description>
     </item>
     
     <item>
@@ -213,7 +213,7 @@ Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wi
       
       <guid>https://gogolok.github.io/spielberichte-k1/</guid>
       <description>Für K1 hab ich mir die Mühe gemacht und für einige Fußball-Spieltage Spielberichte geschrieben, die dann auch auf Facebook unter anderem veröffentlicht wurden.
-2021-10-02 - F-Jugend = 5. Spieltag Ommersheim Spieltag der männlichen F-Jugend  Der Wettergott war dem Spieltag in Ommersheim am Samstag, 02.10.2021, wieder einmal gut gesonnen. Die Kinder waren gut gelaunt und der Trainer Sascha Merker wieder mit von der Partie. Die ersten beiden Partien wurden richtig gut von den Jungs gespielt.</description>
+2021-10-02 - F-Jugend - 5. Spieltag Ommersheim    Spieltag der männlichen F-Jugend  Der Wettergott war dem Spieltag in Ommersheim am Samstag, 02.10.2021, wieder einmal gut gesonnen. Die Kinder waren gut gelaunt und der Trainer Sascha Merker wieder mit von der Partie. Die ersten beiden Partien wurden richtig gut von den Jungs gespielt.</description>
     </item>
     
     <item>
@@ -222,9 +222,9 @@ Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wi
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://gogolok.github.io/now/</guid>
-      <description>WHAT I&amp;rsquo;M DOING NOW (This is a now page, and if you have your own site, you should make one, too.)
-Where I&amp;rsquo;m currently living in Saarland, Germany, probably for the rest of my life.
-What  Working with anynines on our mission Fully automating the entire lifecycle of a wide range of data services to run on cloud-native platforms across infrastructures at scale., see Principles and Strategies of Data Service Automation.</description>
+      <description>WHAT I&amp;rsquo;M DOING NOW    (This is a now page, and if you have your own site, you should make one, too.)
+Where    I&amp;rsquo;m currently living in Saarland, Germany, probably for the rest of my life.
+What     Working with anynines on our mission Fully automating the entire lifecycle of a wide range of data services to run on cloud-native platforms across infrastructures at scale.</description>
     </item>
     
   </channel>
