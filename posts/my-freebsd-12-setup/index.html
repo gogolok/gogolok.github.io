@@ -71,7 +71,7 @@ Disadvantages:
     <link rel="apple-touch-icon" href="https://gogolok.github.io/images/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="https://gogolok.github.io/images/apple-touch-icon.png">
 
-    <meta name="generator" content="Hugo 0.89.4" />
+    <meta name="generator" content="Hugo 0.96.0" />
   </head>
 
   
@@ -178,64 +178,64 @@ For newer versions of FreeBSD I&rsquo;ll create a new post.</p>
     <i class="fa fa-link" aria-hidden="true"></i>
   </a>
 </h2>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#007f7f"># freebsd-update fetch install</span>
-<span style="color:#007f7f"># shutdown -r now</span>
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#007f7f"># pkg</span>
-The package management tool is not yet installed on your system.
-Do you want to fetch and install it now? [y/N]:
-</code></pre></div><h2 id="sudo">
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#007f7f"># freebsd-update fetch install</span>
+</span></span><span style="display:flex;"><span><span style="color:#007f7f"># shutdown -r now</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#007f7f"># pkg</span>
+</span></span><span style="display:flex;"><span>The package management tool is not yet installed on your system.
+</span></span><span style="display:flex;"><span>Do you want to fetch and install it now? [y/N]:
+</span></span></code></pre></div><h2 id="sudo">
   Sudo
   <a class="heading-link" href="#sudo">
     <i class="fa fa-link" aria-hidden="true"></i>
   </a>
 </h2>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#007f7f"># pkg install sudo</span>
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#007f7f"># vi /usr/local/etc/sudoers</span>
-%wheel ALL=(ALL) ALL
-</code></pre></div><h2 id="shell">
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#007f7f"># pkg install sudo</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#007f7f"># vi /usr/local/etc/sudoers</span>
+</span></span><span style="display:flex;"><span>%wheel ALL=(ALL) ALL
+</span></span></code></pre></div><h2 id="shell">
   Shell
   <a class="heading-link" href="#shell">
     <i class="fa fa-link" aria-hidden="true"></i>
   </a>
 </h2>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#007f7f"># pkg install bash zsh</span>
-</code></pre></div><h2 id="new-user-and-default-shell">
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#007f7f"># pkg install bash zsh</span>
+</span></span></code></pre></div><h2 id="new-user-and-default-shell">
   New User And Default Shell
   <a class="heading-link" href="#new-user-and-default-shell">
     <i class="fa fa-link" aria-hidden="true"></i>
   </a>
 </h2>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#007f7f"># adduser</span>
-Username: gogo
-Full name:
-Uid (Leave empty <span style="color:#fff;font-weight:bold">for</span> default):
-Login group [gogo]: wheel
-Login group is wheel. Invite gogo into other groups? []:
-Login class [default]:
-Shell (sh csh tcsh bash rbash zsh rzsh nologin) [sh]: zsh
-Home directory [/home/gogo]:
-Home directory permissions (Leave empty <span style="color:#fff;font-weight:bold">for</span> default):
-Use password-based authentication? [yes]
-Use an empty password? (yes/no) [no]:
-Use a random password? (yes/no) [no]:
-Enter password:
-Enter password again:
-Lock out the account after creation? [no]:
-Username   : gogo
-Password   : *****
-Full name  :
-uid        : <span style="color:#ff0;font-weight:bold">1001</span>
-Class      :
-Groups     : wheel
-Home       : /home/gogo
-Home Mode  :
-Shell      : /usr/local/bin/zsh
-Locked     : no
-Ok? (yes/no): yes
-adduser: INFO: Successfully added (gogo) to the user database.
-Add another user? (yes/no): no
-Goodbye!
-</code></pre></div><p><strong>Please log in to the new user from now on.</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#007f7f"># adduser</span>
+</span></span><span style="display:flex;"><span>Username: gogo
+</span></span><span style="display:flex;"><span>Full name:
+</span></span><span style="display:flex;"><span>Uid (Leave empty <span style="color:#fff;font-weight:bold">for</span> default):
+</span></span><span style="display:flex;"><span>Login group [gogo]: wheel
+</span></span><span style="display:flex;"><span>Login group is wheel. Invite gogo into other groups? []:
+</span></span><span style="display:flex;"><span>Login class [default]:
+</span></span><span style="display:flex;"><span>Shell (sh csh tcsh bash rbash zsh rzsh nologin) [sh]: zsh
+</span></span><span style="display:flex;"><span>Home directory [/home/gogo]:
+</span></span><span style="display:flex;"><span>Home directory permissions (Leave empty <span style="color:#fff;font-weight:bold">for</span> default):
+</span></span><span style="display:flex;"><span>Use password-based authentication? [yes]
+</span></span><span style="display:flex;"><span>Use an empty password? (yes/no) [no]:
+</span></span><span style="display:flex;"><span>Use a random password? (yes/no) [no]:
+</span></span><span style="display:flex;"><span>Enter password:
+</span></span><span style="display:flex;"><span>Enter password again:
+</span></span><span style="display:flex;"><span>Lock out the account after creation? [no]:
+</span></span><span style="display:flex;"><span>Username   : gogo
+</span></span><span style="display:flex;"><span>Password   : *****
+</span></span><span style="display:flex;"><span>Full name  :
+</span></span><span style="display:flex;"><span>uid        : <span style="color:#ff0;font-weight:bold">1001</span>
+</span></span><span style="display:flex;"><span>Class      :
+</span></span><span style="display:flex;"><span>Groups     : wheel
+</span></span><span style="display:flex;"><span>Home       : /home/gogo
+</span></span><span style="display:flex;"><span>Home Mode  :
+</span></span><span style="display:flex;"><span>Shell      : /usr/local/bin/zsh
+</span></span><span style="display:flex;"><span>Locked     : no
+</span></span><span style="display:flex;"><span>Ok? (yes/no): yes
+</span></span><span style="display:flex;"><span>adduser: INFO: Successfully added (gogo) to the user database.
+</span></span><span style="display:flex;"><span>Add another user? (yes/no): no
+</span></span><span style="display:flex;"><span>Goodbye!
+</span></span></code></pre></div><p><strong>Please log in to the new user from now on.</strong></p>
 <h2 id="general-packages">
   General Packages
   <a class="heading-link" href="#general-packages">
@@ -243,10 +243,10 @@ Goodbye!
   </a>
 </h2>
 <p>More comfort:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ sudo pkg install vim-console tmux
-</code></pre></div><p>For development in general:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ sudo pkg install git
-</code></pre></div><h2 id="ruby">
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ sudo pkg install vim-console tmux
+</span></span></code></pre></div><p>For development in general:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ sudo pkg install git
+</span></span></code></pre></div><h2 id="ruby">
   Ruby
   <a class="heading-link" href="#ruby">
     <i class="fa fa-link" aria-hidden="true"></i>
@@ -258,15 +258,15 @@ Goodbye!
     <i class="fa fa-link" aria-hidden="true"></i>
   </a>
 </h3>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ git clone https://github.com/rbenv/rbenv.git ~/.rbenv
-$ git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ <span style="color:#fff;font-weight:bold">echo</span> <span style="color:#0ff;font-weight:bold">&#39;export PATH=&#34;$HOME/.rbenv/bin:$PATH&#34;&#39;</span> &gt;&gt; ~/.zshenv
-$ <span style="color:#fff;font-weight:bold">echo</span> <span style="color:#0ff;font-weight:bold">&#39;eval &#34;$(rbenv init -)&#34;&#39;</span> &gt;&gt; ~/.zshenv
-</code></pre></div><p><strong>Afterwards you need to relogin to your user account.</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+</span></span><span style="display:flex;"><span>$ git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ <span style="color:#fff;font-weight:bold">echo</span> <span style="color:#0ff;font-weight:bold">&#39;export PATH=&#34;$HOME/.rbenv/bin:$PATH&#34;&#39;</span> &gt;&gt; ~/.zshenv
+</span></span><span style="display:flex;"><span>$ <span style="color:#fff;font-weight:bold">echo</span> <span style="color:#0ff;font-weight:bold">&#39;eval &#34;$(rbenv init -)&#34;&#39;</span> &gt;&gt; ~/.zshenv
+</span></span></code></pre></div><p><strong>Afterwards you need to relogin to your user account.</strong></p>
 <p>Now we can install a rather new Ruby version:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ rbenv install 2.7.1
-$ rbenv global 2.7.1
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ rbenv install 2.7.1
+</span></span><span style="display:flex;"><span>$ rbenv global 2.7.1
+</span></span></code></pre></div>
       </div>
 
 
@@ -291,7 +291,7 @@ $ rbenv global 2.7.1
     
       2019 -
     
-    2021
+    2022
      Robert Gogolok 
     ·
     Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
@@ -303,7 +303,7 @@ $ rbenv global 2.7.1
 
     
       
-      <script src="https://gogolok.github.io/js/coder.min.03b17769f4f91ae35667e1f2a1ca8c16f50562576cf90ff32b3179926914daa5.js" integrity="sha256-A7F3afT5GuNWZ&#43;HyocqMFvUFYlds&#43;Q/zKzF5kmkU2qU="></script>
+      <script src="https://gogolok.github.io/js/coder.min.f453d26c79f010446cf0d9770197f77de32c07b7a5512d141a286247fe154a22.js" integrity="sha256-9FPSbHnwEERs8Nl3AZf3feMsB7elUS0UGihiR/4VSiI="></script>
     
 
     
