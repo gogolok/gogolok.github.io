@@ -13,7 +13,7 @@
       <pubDate>Fri, 15 Aug 2014 23:36:32 +0200</pubDate>
       
       <guid>https://gogolok.github.io/posts/how-to-use-activesupport-within-sinatra/</guid>
-      <description># Gemfile source &amp;#39;https://rubygems.org&amp;#39;  gem &amp;#39;sinatra&amp;#39;, &amp;#39;1.4.5&amp;#39; gem &amp;#39;activesupport&amp;#39;, &amp;#39;4.1.4&amp;#39; # app.rb require &amp;#39;active_support/all&amp;#39; require &amp;#39;sinatra&amp;#39;  Time::DATE_FORMATS[:my_datetime] = &amp;#34;%Y-%m-%d Hour: %H Minute: %M Second: %S&amp;#34;  get &amp;#39;/&amp;#39; do  Time.now.to_s(:my_datetime) end https://gist.github.com/gogolok/5877734</description>
+      <description># Gemfile source &amp;#39;https://rubygems.org&amp;#39; gem &amp;#39;sinatra&amp;#39;, &amp;#39;1.4.5&amp;#39; gem &amp;#39;activesupport&amp;#39;, &amp;#39;4.1.4&amp;#39; # app.rb require &amp;#39;active_support/all&amp;#39; require &amp;#39;sinatra&amp;#39; Time::DATE_FORMATS[:my_datetime] = &amp;#34;%Y-%m-%d Hour: %H Minute: %M Second: %S&amp;#34; get &amp;#39;/&amp;#39; do Time.now.to_s(:my_datetime) end https://gist.github.com/gogolok/5877734</description>
     </item>
     
     <item>
