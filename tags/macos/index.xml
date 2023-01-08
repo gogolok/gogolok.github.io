@@ -14,13 +14,13 @@
       
       <guid>https://gogolok.github.io/posts/my-iterm2-setup/</guid>
       <description>I extend the default installation of iTerm2 in the following ways.
-Key Shortcuts Move Cusrsor One Worl Left Keyboard shortcut: option + left arrow
+Key Shortcuts Link to heading Move Cusrsor One Worl Left Link to heading Keyboard shortcut: option + left arrow
 Action: Send Hex Code
 Code: 0x1b 0x62
-Move Cusrsor One Worl Right Keyboard shortcut: option + right arrow
+Move Cusrsor One Worl Right Link to heading Keyboard shortcut: option + right arrow
 Action: Send Hex Code
 Code: 0x1b 0x66
-Colors I use the Selenized color palette.</description>
+Colors Link to heading I use the Selenized color palette.</description>
     </item>
     
   </channel>
