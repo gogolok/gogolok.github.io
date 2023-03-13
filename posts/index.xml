@@ -6,7 +6,17 @@
     <description>Recent content in Posts on gogolok</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 25 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://gogolok.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://gogolok.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Quickly Setup Samba on FreeBSD 13</title>
+      <link>https://gogolok.github.io/posts/quickly-setup-samba-on-freebsd13/</link>
+      <pubDate>Mon, 13 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://gogolok.github.io/posts/quickly-setup-samba-on-freebsd13/</guid>
+      <description>Some notes how I&amp;rsquo;ve quickly set up Samba share for my macOS machines in the local network.
+Installation Link to heading # pkg install samba413 Samba Configuration Link to heading # vim /usr/local/etc/smb4.conf [global] workgroup = WORKGROUP server string = FreeBSD Server Samba netbios name = freebsd-desktop wins support = yes security = user passdb backend = tdbsam [archive] path = /backuppool/archive valid users = gogo public = no writable = yes browsable = yes read only = no guest ok = no create mask = 0755 directory mask = 0755 pdbedit -a -u gogo new password: retype new password: Enable Samba Server Link to heading sysrc samba_server_enable=&amp;#34;YES&amp;#34; service samba_server start </description>
+    </item>
+    
     <item>
       <title>My Freebsd 13 Setup</title>
       <link>https://gogolok.github.io/posts/my-freebsd-13-setup/</link>
