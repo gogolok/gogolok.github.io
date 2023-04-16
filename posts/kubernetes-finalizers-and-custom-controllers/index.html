@@ -43,7 +43,7 @@ https://unsplash.com/@frankiefoto In this blog post we take finalizers a step fu
 
   
   
-  <link rel="stylesheet" href="https://gogolok.github.io/css/coder.min.36f76aaf39a14ecf5c3a3c6250dcaf06c238b3d8365d17d646f95cb1874e852b.css" integrity="sha256-NvdqrzmhTs9cOjxiUNyvBsI4s9g2XRfWRvlcsYdOhSs=" crossorigin="anonymous" media="screen" />
+  <link rel="stylesheet" href="https://gogolok.github.io/css/coder.min.0669b62fc2c181a12a4ba10be9984e385c9a5e83dc7cb7ae3759ad0b98d7e8b2.css" integrity="sha256-Bmm2L8LBgaEqS6EL6ZhOOFyaXoPcfLeuN1mtC5jX6LI=" crossorigin="anonymous" media="screen" />
 
 
 
@@ -53,7 +53,7 @@ https://unsplash.com/@frankiefoto In this blog post we take finalizers a step fu
   
     
     
-    <link rel="stylesheet" href="https://gogolok.github.io/css/coder-dark.min.216e36d3eaf6f4cdfd67dc1200c49a8169e6478102977b3e9ac51a064c57054c.css" integrity="sha256-IW420&#43;r29M39Z9wSAMSagWnmR4ECl3s&#43;msUaBkxXBUw=" crossorigin="anonymous" media="screen" />
+    <link rel="stylesheet" href="https://gogolok.github.io/css/coder-dark.min.f6534b0b446b75d9b6ad77a97d43ede2ddaeff1b6e2361fb7198d6f8fcb7f83f.css" integrity="sha256-9lNLC0Rrddm2rXepfUPt4t2u/xtuI2H7cZjW&#43;Py3&#43;D8=" crossorigin="anonymous" media="screen" />
   
 
 
@@ -75,7 +75,7 @@ https://unsplash.com/@frankiefoto In this blog post we take finalizers a step fu
 
 
 
-<meta name="generator" content="Hugo 0.110.0">
+<meta name="generator" content="Hugo 0.111.3">
 
 
 
@@ -192,8 +192,8 @@ https://unsplash.com/@frankiefoto In this blog post we take finalizers a step fu
     <span class="sr-only">Link to heading</span>
   </a>
 </h1>
-<p>In the <a href="https://gogolok.github.io/posts/kubernetes-finalizers-in-custom-resources/">last blog post</a>
-we provided an introduction to <a href="https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/#finalizers">Kubernetes Finalizers</a>.</p>
+<p>In the <a href="https://gogolok.github.io/posts/kubernetes-finalizers-in-custom-resources/"  class="external-link" target="_blank" rel="noopener">last blog post</a>
+we provided an introduction to <a href="https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/#finalizers"  class="external-link" target="_blank" rel="noopener">Kubernetes Finalizers</a>.</p>
 <p>In the introduction we covered the basic mechanics of how finalizers allow
 controllers to implement asynchronous pre-delete hooks. Simply put they inform
 the Kubernetes control plane that an action needs to take place before
@@ -214,7 +214,7 @@ actions of a resource deletion with the help of a custom controller.</p>
   </a>
 </h1>
 <p>Once again we rely in this blog post on
-<a href="https://kubernetes.io/docs/tasks/tools/install-minikube/">Minikube</a>.
+<a href="https://kubernetes.io/docs/tasks/tools/install-minikube/"  class="external-link" target="_blank" rel="noopener">Minikube</a>.
 Please ensure it&rsquo;s installed and running.</p>
 <p>We will use the same custom resource scenario from our previous example.</p>
 <p>In the last blog post we manually applied our custom resource definition
@@ -261,7 +261,7 @@ described in the demo section. For verbosity we provide the
 </span></span><span style="display:flex;"><span>    <span style="color:#007f7f"># shortNames allow shorter string to match your resource on the CLI</span>
 </span></span><span style="display:flex;"><span>    <span style="font-weight:bold">shortNames</span>:
 </span></span><span style="display:flex;"><span>    - si
-</span></span></code></pre></div><p>In this blog post we will be using a <a href="https://github.com/gogolok/kubernetes-controller-finalizers-example">custom controller</a>
+</span></span></code></pre></div><p>In this blog post we will be using a <a href="https://github.com/gogolok/kubernetes-controller-finalizers-example"  class="external-link" target="_blank" rel="noopener">custom controller</a>
 to demonstrate how a controller can perform an action when notified about the
 pending deletion of a service instance.</p>
 <p>To use, clone the repository</p>
@@ -271,7 +271,7 @@ pending deletion of a service instance.</p>
 <div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>make install &amp;&amp; make run ENABLE_WEBHOOKS=<span style="color:#fff;font-weight:bold">false</span>
 </span></span></code></pre></div><p>This will run the custom controller that is associated with our custom
 resource definition. The design pattern of a
-custom resource and a controller is known as a <a href="https://kubernetes.io/docs/concepts/extend-kubernetes/operator/">Kubernetes
+custom resource and a controller is known as a <a href="https://kubernetes.io/docs/concepts/extend-kubernetes/operator/"  class="external-link" target="_blank" rel="noopener">Kubernetes
 Operator</a>.</p>
 <p>Now we continue with the practical demo.</p>
 <h1 id="demo">
@@ -451,6 +451,12 @@ operations in mind that can be automated using this approach.</p>
 
   
 
+
+  
+
+  
+
+  
 
   
 

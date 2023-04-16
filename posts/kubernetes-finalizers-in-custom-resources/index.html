@@ -37,7 +37,7 @@
 
   
   
-  <link rel="stylesheet" href="https://gogolok.github.io/css/coder.min.36f76aaf39a14ecf5c3a3c6250dcaf06c238b3d8365d17d646f95cb1874e852b.css" integrity="sha256-NvdqrzmhTs9cOjxiUNyvBsI4s9g2XRfWRvlcsYdOhSs=" crossorigin="anonymous" media="screen" />
+  <link rel="stylesheet" href="https://gogolok.github.io/css/coder.min.0669b62fc2c181a12a4ba10be9984e385c9a5e83dc7cb7ae3759ad0b98d7e8b2.css" integrity="sha256-Bmm2L8LBgaEqS6EL6ZhOOFyaXoPcfLeuN1mtC5jX6LI=" crossorigin="anonymous" media="screen" />
 
 
 
@@ -47,7 +47,7 @@
   
     
     
-    <link rel="stylesheet" href="https://gogolok.github.io/css/coder-dark.min.216e36d3eaf6f4cdfd67dc1200c49a8169e6478102977b3e9ac51a064c57054c.css" integrity="sha256-IW420&#43;r29M39Z9wSAMSagWnmR4ECl3s&#43;msUaBkxXBUw=" crossorigin="anonymous" media="screen" />
+    <link rel="stylesheet" href="https://gogolok.github.io/css/coder-dark.min.f6534b0b446b75d9b6ad77a97d43ede2ddaeff1b6e2361fb7198d6f8fcb7f83f.css" integrity="sha256-9lNLC0Rrddm2rXepfUPt4t2u/xtuI2H7cZjW&#43;Py3&#43;D8=" crossorigin="anonymous" media="screen" />
   
 
 
@@ -69,7 +69,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.110.0">
+<meta name="generator" content="Hugo 0.111.3">
 
 
 
@@ -186,7 +186,7 @@
     <span class="sr-only">Link to heading</span>
   </a>
 </h1>
-<p>When extending the Kubernetes API with <a href="https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/">CustomResourceDefinitions</a>
+<p>When extending the Kubernetes API with <a href="https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/"  class="external-link" target="_blank" rel="noopener">CustomResourceDefinitions</a>
 you’ll come  across the dilemma to clean up external resources when deleting a
 custom resource. Although you can create a custom resource simply to store and
 retrieve structured data, most of the time there is some entity involved,
@@ -205,7 +205,7 @@ to an external blob store, for instance AWS S3 during a backup operation. Once
 you want to get rid of this custom resource and therefore that service
 instance, you might want to clean up the backups that were created specifically
 for this data service instance (for example on AWS S3).</p>
-<p>This is where <a href="https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/#finalizers">Kubernetes Finalizers</a>
+<p>This is where <a href="https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/#finalizers"  class="external-link" target="_blank" rel="noopener">Kubernetes Finalizers</a>
 come into play and help to clean up external resources before the deletion of a
 custom resource. You can add finalizers to a custom resource which will
 prevent for example the kubectl tool from deleting it.</p>
@@ -216,9 +216,9 @@ prevent for example the kubectl tool from deleting it.</p>
     <span class="sr-only">Link to heading</span>
   </a>
 </h1>
-<p>Let’s do a practical demo with <a href="https://kubernetes.io/docs/tasks/tools/install-minikube/">Minikube</a>
+<p>Let’s do a practical demo with <a href="https://kubernetes.io/docs/tasks/tools/install-minikube/"  class="external-link" target="_blank" rel="noopener">Minikube</a>
 on how finalizers can help to prevent the deletion of custom resources.</p>
-<p>You can install Minikube using the <a href="https://kubernetes.io/docs/tasks/tools/install-minikube/">Install Minikube instructions</a>.
+<p>You can install Minikube using the <a href="https://kubernetes.io/docs/tasks/tools/install-minikube/"  class="external-link" target="_blank" rel="noopener">Install Minikube instructions</a>.
 Once it is up and running, you should be able to call <code>kubectl get crd</code> without
 an error.</p>
 <p>In order to create a custom resource, we first need to create a custom resource definition.
@@ -384,6 +384,12 @@ to protect custom resources with finalizers during reconciliation.</p>
 
   
 
+
+  
+
+  
+
+  
 
   
 
