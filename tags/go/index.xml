@@ -6,7 +6,19 @@
     <description>Recent content in Go on gogolok</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 20 Aug 2018 23:52:39 +0200</lastBuildDate><atom:link href="https://gogolok.github.io/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Aug 2023 07:47:12 +0200</lastBuildDate><atom:link href="https://gogolok.github.io/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Built-in min and max functions in Go 1.21</title>
+      <link>https://gogolok.github.io/posts/go-1-21-min-max/</link>
+      <pubDate>Tue, 08 Aug 2023 07:47:12 +0200</pubDate>
+      
+      <guid>https://gogolok.github.io/posts/go-1-21-min-max/</guid>
+      <description>Go 1.21 brings the two built-in functions min and max to compute the smallest or largest value of a fixed number of arguments of ordered types.
+Only a fixed number of arguments is supported. Go needs to know the number of arguments at compile time.
+For string arguments the result for min is the first argument with the smallest (or for max, largest) value, compared lexically byte-wise.
+These new built-ins will not break your existing code that already uses the names min and max.</description>
+    </item>
+    
     <item>
       <title>Switched to Hugo</title>
       <link>https://gogolok.github.io/posts/switched-to-hugo/</link>
