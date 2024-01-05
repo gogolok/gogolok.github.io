@@ -6,195 +6,133 @@
     <description>Recent content in Posts on gogolok</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 08 Aug 2023 07:47:12 +0200</lastBuildDate><atom:link href="https://gogolok.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Aug 2023 07:47:12 +0200</lastBuildDate>
+    <atom:link href="https://gogolok.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Built-in min and max functions in Go 1.21</title>
       <link>https://gogolok.github.io/posts/go-1-21-min-max/</link>
       <pubDate>Tue, 08 Aug 2023 07:47:12 +0200</pubDate>
-      
       <guid>https://gogolok.github.io/posts/go-1-21-min-max/</guid>
-      <description>Go 1.21 brings the two built-in functions min and max to compute the smallest or largest value of a fixed number of arguments of ordered types.
-Only a fixed number of arguments is supported. Go needs to know the number of arguments at compile time.
-For string arguments the result for min is the first argument with the smallest (or for max, largest) value, compared lexically byte-wise.
-These new built-ins will not break your existing code that already uses the names min and max.</description>
+      <description>Go 1.21 brings the two built-in functions min and max to compute the smallest or largest value of a fixed number of arguments of ordered types.&#xA;Only a fixed number of arguments is supported. Go needs to know the number of arguments at compile time.&#xA;For string arguments the result for min is the first argument with the smallest (or for max, largest) value, compared lexically byte-wise.&#xA;These new built-ins will not break your existing code that already uses the names min and max.</description>
     </item>
-    
     <item>
       <title>Quickly Setup Samba on FreeBSD 13</title>
       <link>https://gogolok.github.io/posts/quickly-setup-samba-on-freebsd13/</link>
       <pubDate>Mon, 13 Mar 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://gogolok.github.io/posts/quickly-setup-samba-on-freebsd13/</guid>
-      <description>Some notes how I&amp;rsquo;ve quickly set up Samba share for my macOS machines in the local network.
-Installation Link to heading # pkg install samba413 Samba Configuration Link to heading # vim /usr/local/etc/smb4.conf [global] workgroup = WORKGROUP server string = FreeBSD Server Samba netbios name = freebsd-desktop wins support = yes security = user passdb backend = tdbsam [archive] path = /backuppool/archive valid users = gogo public = no writable = yes browsable = yes read only = no guest ok = no create mask = 0755 directory mask = 0755 pdbedit -a -u gogo new password: retype new password: Enable Samba Server Link to heading sysrc samba_server_enable=&amp;#34;YES&amp;#34; service samba_server start </description>
+      <description>Some notes how I&amp;rsquo;ve quickly set up Samba share for my macOS machines in the local network.&#xA;Installation Link to heading # pkg install samba413 Samba Configuration Link to heading # vim /usr/local/etc/smb4.conf [global] workgroup = WORKGROUP server string = FreeBSD Server Samba netbios name = freebsd-desktop wins support = yes security = user passdb backend = tdbsam [archive] path = /backuppool/archive valid users = gogo public = no writable = yes browsable = yes read only = no guest ok = no create mask = 0755 directory mask = 0755 pdbedit -a -u gogo new password: retype new password: Enable Samba Server Link to heading sysrc samba_server_enable=&amp;#34;YES&amp;#34; service samba_server start </description>
     </item>
-    
     <item>
       <title>My Freebsd 13 Setup</title>
       <link>https://gogolok.github.io/posts/my-freebsd-13-setup/</link>
       <pubDate>Sun, 25 Apr 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://gogolok.github.io/posts/my-freebsd-13-setup/</guid>
-      <description>From time to time I&amp;rsquo;m doing some stuff on FreeBSD. I still like it for its simplicity (I&amp;rsquo;m old and Linux is progressing way to fast ;-).
-I&amp;rsquo;m keeping some notes how to set up FreeBSD manually in this blog post. For newer versions of FreeBSD I&amp;rsquo;ll create a new post.
-Disadvantages:
-manual setup Update to Latest Stable Version Link to heading After a fresh install, we first apply latest updates to the current FreeBSD version.</description>
+      <description>From time to time I&amp;rsquo;m doing some stuff on FreeBSD. I still like it for its simplicity (I&amp;rsquo;m old and Linux is progressing way to fast ;-).&#xA;I&amp;rsquo;m keeping some notes how to set up FreeBSD manually in this blog post. For newer versions of FreeBSD I&amp;rsquo;ll create a new post.&#xA;Disadvantages:&#xA;manual setup Update to Latest Stable Version Link to heading After a fresh install, we first apply latest updates to the current FreeBSD version.</description>
     </item>
-    
     <item>
       <title>Kubernetes: Finalizers and Custom Controllers</title>
       <link>https://gogolok.github.io/posts/kubernetes-finalizers-and-custom-controllers/</link>
       <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://gogolok.github.io/posts/kubernetes-finalizers-and-custom-controllers/</guid>
-      <description>Authors Link to heading Matthew Doherty Philipp Kuntz Robert Gogolok Introduction Link to heading In the last blog post we provided an introduction to Kubernetes Finalizers.
-In the introduction we covered the basic mechanics of how finalizers allow controllers to implement asynchronous pre-delete hooks. Simply put they inform the Kubernetes control plane that an action needs to take place before Kubernetes garbage collection logic can be performed.
-https://unsplash.com/@frankiefoto In this blog post we take finalizers a step further by performing the resulting actions of a resource deletion with the help of a custom controller.</description>
+      <description>Authors Link to heading Matthew Doherty Philipp Kuntz Robert Gogolok Introduction Link to heading In the last blog post we provided an introduction to Kubernetes Finalizers.&#xA;In the introduction we covered the basic mechanics of how finalizers allow controllers to implement asynchronous pre-delete hooks. Simply put they inform the Kubernetes control plane that an action needs to take place before Kubernetes garbage collection logic can be performed.&#xA;https://unsplash.com/@frankiefoto In this blog post we take finalizers a step further by performing the resulting actions of a resource deletion with the help of a custom controller.</description>
     </item>
-    
     <item>
       <title>Happy Programmer&#39;s Day 2020</title>
       <link>https://gogolok.github.io/posts/happy-programmers-day-2020/</link>
       <pubDate>Sat, 12 Sep 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://gogolok.github.io/posts/happy-programmers-day-2020/</guid>
-      <description>I love programming.
-A long time ago in a galaxy far, far away &amp;hellip; I’ve got a Nintendo NES. It was nice to play Super Mario, Mega Man, and other classic games, but the games were rather expensive. So I convinced my parents to buy an even more expensive personal computer (PC). Games for the PC were also expensive, so I looked into other stuff I can do with a PC.</description>
+      <description>I love programming.&#xA;A long time ago in a galaxy far, far away &amp;hellip; I’ve got a Nintendo NES. It was nice to play Super Mario, Mega Man, and other classic games, but the games were rather expensive. So I convinced my parents to buy an even more expensive personal computer (PC). Games for the PC were also expensive, so I looked into other stuff I can do with a PC.</description>
     </item>
-    
     <item>
       <title>Kubernetes: Finalizers in Custom Resources</title>
       <link>https://gogolok.github.io/posts/kubernetes-finalizers-in-custom-resources/</link>
       <pubDate>Thu, 10 Sep 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://gogolok.github.io/posts/kubernetes-finalizers-in-custom-resources/</guid>
       <description>Authors Link to heading Matthew Doherty Philipp Kuntz Robert Gogolok Introduction Link to heading When extending the Kubernetes API with CustomResourceDefinitions you’ll come across the dilemma to clean up external resources when deleting a custom resource. Although you can create a custom resource simply to store and retrieve structured data, most of the time there is some entity involved, like custom controllers . The controller will manage this resource and create other external resources to handle the semantics of that resource.</description>
     </item>
-    
     <item>
       <title>My iTerm2 Setup</title>
       <link>https://gogolok.github.io/posts/my-iterm2-setup/</link>
       <pubDate>Mon, 04 May 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://gogolok.github.io/posts/my-iterm2-setup/</guid>
-      <description>I extend the default installation of iTerm2 in the following ways.
-Key Shortcuts Link to heading Move Cusrsor One Worl Left Link to heading Keyboard shortcut: option + left arrow
-Action: Send Hex Code
-Code: 0x1b 0x62
-Move Cusrsor One Worl Right Link to heading Keyboard shortcut: option + right arrow
-Action: Send Hex Code
-Code: 0x1b 0x66
-Colors Link to heading I use the Selenized color palette.</description>
+      <description>I extend the default installation of iTerm2 in the following ways.&#xA;Key Shortcuts Link to heading Move Cusrsor One Worl Left Link to heading Keyboard shortcut: option + left arrow&#xA;Action: Send Hex Code&#xA;Code: 0x1b 0x62&#xA;Move Cusrsor One Worl Right Link to heading Keyboard shortcut: option + right arrow&#xA;Action: Send Hex Code&#xA;Code: 0x1b 0x66&#xA;Colors Link to heading I use the Selenized color palette.</description>
     </item>
-    
     <item>
       <title>My Freebsd 12 Setup</title>
       <link>https://gogolok.github.io/posts/my-freebsd-12-setup/</link>
       <pubDate>Sat, 18 Apr 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://gogolok.github.io/posts/my-freebsd-12-setup/</guid>
-      <description>From time to time I&amp;rsquo;m doing some stuff on FreeBSD. I still like it for its simplicity (I&amp;rsquo;m old and Linux is progressing way to fast ;-).
-I&amp;rsquo;m keeping some notes how to set up FreeBSD manually in this blog post. For newer versions of FreeBSD I&amp;rsquo;ll create a new post.
-Disadvantages:
-manual setup Update to Latest Stable Version Link to heading # freebsd-update fetch install # shutdown -r now # pkg The package management tool is not yet installed on your system.</description>
+      <description>From time to time I&amp;rsquo;m doing some stuff on FreeBSD. I still like it for its simplicity (I&amp;rsquo;m old and Linux is progressing way to fast ;-).&#xA;I&amp;rsquo;m keeping some notes how to set up FreeBSD manually in this blog post. For newer versions of FreeBSD I&amp;rsquo;ll create a new post.&#xA;Disadvantages:&#xA;manual setup Update to Latest Stable Version Link to heading # freebsd-update fetch install # shutdown -r now # pkg The package management tool is not yet installed on your system.</description>
     </item>
-    
     <item>
       <title>Switched to Hugo</title>
       <link>https://gogolok.github.io/posts/switched-to-hugo/</link>
       <pubDate>Mon, 20 Aug 2018 23:52:39 +0200</pubDate>
-      
       <guid>https://gogolok.github.io/posts/switched-to-hugo/</guid>
       <description>This site is being generated by Hugo from now on.</description>
     </item>
-    
     <item>
       <title>Enable Insecure Registry on Kitematic</title>
       <link>https://gogolok.github.io/posts/kitematic-enable-insecure-registry/</link>
       <pubDate>Tue, 09 Feb 2016 23:47:55 +0200</pubDate>
-      
       <guid>https://gogolok.github.io/posts/kitematic-enable-insecure-registry/</guid>
-      <description>In order to use an insecure registry with Kitematic, you can follow the steps below:
-Login to the Kitematic box, e.g. double click in VirtualBox on the kitematic machine that is named &amp;lsquo;default&amp;rsquo; by default :-) Edit the file /var/lib/boot2docker/profile and append to EXTRA_ARGS the --insecure-registry parameter: EXTRA_ARGS=&amp;#39; ... --insecure-registry myregistrydomain.com:5000 &amp;#39; Restart docker /usr/local/etc/init.d/docker restart You should now be able to push an image to your insecure registry.</description>
+      <description>In order to use an insecure registry with Kitematic, you can follow the steps below:&#xA;Login to the Kitematic box, e.g. double click in VirtualBox on the kitematic machine that is named &amp;lsquo;default&amp;rsquo; by default :-) Edit the file /var/lib/boot2docker/profile and append to EXTRA_ARGS the --insecure-registry parameter: EXTRA_ARGS=&amp;#39; ... --insecure-registry myregistrydomain.com:5000 &amp;#39; Restart docker /usr/local/etc/init.d/docker restart You should now be able to push an image to your insecure registry.</description>
     </item>
-    
     <item>
       <title>How to Use ActiveSupport Within Sinatra</title>
       <link>https://gogolok.github.io/posts/how-to-use-activesupport-within-sinatra/</link>
       <pubDate>Fri, 15 Aug 2014 23:36:32 +0200</pubDate>
-      
       <guid>https://gogolok.github.io/posts/how-to-use-activesupport-within-sinatra/</guid>
       <description># Gemfile source &amp;#39;https://rubygems.org&amp;#39; gem &amp;#39;sinatra&amp;#39;, &amp;#39;1.4.5&amp;#39; gem &amp;#39;activesupport&amp;#39;, &amp;#39;4.1.4&amp;#39; # app.rb require &amp;#39;active_support/all&amp;#39; require &amp;#39;sinatra&amp;#39; Time::DATE_FORMATS[:my_datetime] = &amp;#34;%Y-%m-%d Hour: %H Minute: %M Second: %S&amp;#34; get &amp;#39;/&amp;#39; do Time.now.to_s(:my_datetime) end https://gist.github.com/gogolok/5877734</description>
     </item>
-    
     <item>
       <title>Rails Girls Luxembourg: Rails Coach</title>
       <link>https://gogolok.github.io/posts/rails-girls-luxembourg-rails-coach/</link>
       <pubDate>Wed, 16 Apr 2014 23:45:30 +0200</pubDate>
-      
       <guid>https://gogolok.github.io/posts/rails-girls-luxembourg-rails-coach/</guid>
       <description>I&amp;rsquo;m helping Rails Girls Luxembourg as a Rails coach this May.</description>
     </item>
-    
     <item>
       <title>Generating PDFs With Prawn and Ruby</title>
       <link>https://gogolok.github.io/posts/generating-pdfs-with-prawn-and-ruby/</link>
       <pubDate>Wed, 16 Apr 2014 23:41:37 +0200</pubDate>
-      
       <guid>https://gogolok.github.io/posts/generating-pdfs-with-prawn-and-ruby/</guid>
       <description>I’ve written a guest post at http://blog.anynines.com/generating-pdfs-prawn-ruby/.</description>
     </item>
-    
     <item>
       <title>Freebsd 9.1 Upgrade</title>
       <link>https://gogolok.github.io/posts/freebsd-9-1-upgrade/</link>
       <pubDate>Thu, 03 Jan 2013 23:44:27 +0200</pubDate>
-      
       <guid>https://gogolok.github.io/posts/freebsd-9-1-upgrade/</guid>
       <description>I’ve upgrade all my servers to FreeBSD 9.1. It’s an easy task following the &amp;lsquo;Upgrading Using “FreeBSD Update”&amp;rsquo; section.</description>
     </item>
-    
     <item>
       <title>Railswaycon 2012 Mobile Backends in Ruby on Rails</title>
       <link>https://gogolok.github.io/posts/railswaycon-2012-mobile-backends-in-ruby-on-rails/</link>
       <pubDate>Wed, 10 Oct 2012 23:42:59 +0200</pubDate>
-      
       <guid>https://gogolok.github.io/posts/railswaycon-2012-mobile-backends-in-ruby-on-rails/</guid>
-      <description>Julian Fischer Avarteq GmbH und Robert Gogolok Avarteq GmbH 17.10.2012 | 10:30 – 11:30 Uhr | Zagrebsaal 2
-Ruby on Rails has become a well accepted and highly appreciated tool for building modern web apps. A complete and well cultivated eco system has been created over the years. Now the increasing demand for mobile applications raises a demand for well designed (JSON) APIs to talk to. It is not less than a perfect match.</description>
+      <description>Julian Fischer Avarteq GmbH und Robert Gogolok Avarteq GmbH 17.10.2012 | 10:30 – 11:30 Uhr | Zagrebsaal 2&#xA;Ruby on Rails has become a well accepted and highly appreciated tool for building modern web apps. A complete and well cultivated eco system has been created over the years. Now the increasing demand for mobile applications raises a demand for well designed (JSON) APIs to talk to. It is not less than a perfect match.</description>
     </item>
-    
     <item>
       <title>Euruko 2012 Trip Report</title>
       <link>https://gogolok.github.io/posts/euruko-2012-trip-report/</link>
       <pubDate>Sun, 03 Jun 2012 23:07:36 +0200</pubDate>
-      
       <guid>https://gogolok.github.io/posts/euruko-2012-trip-report/</guid>
-      <description>Last week, I was able to attend Euruko 2012 in Amsterdam with a few of my colleagues from Avarteq. We arrived thursday night, hence we missed the boat party at thursday night.
-The conference was held in the Pathé Tuschinski. Pathé Tuschinski is a beautiful movie theatre. Nearly 600 attendees occupied the theatre, quite amazing, as the “Happy Friday Hug” depicts.
-My favorite talk at the conference was “JRuby, dudes!” by Charles Nutter.</description>
+      <description>Last week, I was able to attend Euruko 2012 in Amsterdam with a few of my colleagues from Avarteq. We arrived thursday night, hence we missed the boat party at thursday night.&#xA;The conference was held in the Pathé Tuschinski. Pathé Tuschinski is a beautiful movie theatre. Nearly 600 attendees occupied the theatre, quite amazing, as the “Happy Friday Hug” depicts.&#xA;My favorite talk at the conference was “JRuby, dudes!” by Charles Nutter.</description>
     </item>
-    
     <item>
       <title>Sinatra and I18n Support</title>
       <link>https://gogolok.github.io/posts/sinatra-and-i18n-support/</link>
       <pubDate>Fri, 18 Nov 2011 23:22:18 +0200</pubDate>
-      
       <guid>https://gogolok.github.io/posts/sinatra-and-i18n-support/</guid>
       <description>I’ve posted a sample sinatra app using the i18n gem on https://github.com/gogolok/examplegogo/tree/master/sinatra/i18n.</description>
     </item>
-    
     <item>
       <title>bcfg2 - Talk and Paper</title>
       <link>https://gogolok.github.io/posts/bcfg2-talk-and-paper/</link>
       <pubDate>Thu, 01 Mar 2007 00:00:00 +0000</pubDate>
-      
       <guid>https://gogolok.github.io/posts/bcfg2-talk-and-paper/</guid>
-      <description>Gave a talk with Marko Jung in german about bcfg2. The talk was part of the GUUG-Frühjahrsfachgespräch 2007 in Berlin.
-The german abstract says:
-Bcfg2 hilft Systemadministratoren eine konsistente, reproduzierbare und verifizierbare Spezifikation ihrer Systemumgebung zu erstellen und bietet mit Visualisierungs- und Reporting-Tools notwendige Werkzeuge für alltägliche administrative Aufgaben.
-Das distributions- und plattformübergreifende Tool basiert auf einem Modell, in welchem die Systembeschreibung verwendet werden kann, um den Status von Systemen zu validieren und (optional) anzupassen.</description>
+      <description>Gave a talk with Marko Jung in german about bcfg2. The talk was part of the GUUG-Frühjahrsfachgespräch 2007 in Berlin.&#xA;The german abstract says:&#xA;Bcfg2 hilft Systemadministratoren eine konsistente, reproduzierbare und verifizierbare Spezifikation ihrer Systemumgebung zu erstellen und bietet mit Visualisierungs- und Reporting-Tools notwendige Werkzeuge für alltägliche administrative Aufgaben.&#xA;Das distributions- und plattformübergreifende Tool basiert auf einem Modell, in welchem die Systembeschreibung verwendet werden kann, um den Status von Systemen zu validieren und (optional) anzupassen.</description>
     </item>
-    
   </channel>
 </rss>

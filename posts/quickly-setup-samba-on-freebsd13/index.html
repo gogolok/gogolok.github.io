@@ -17,8 +17,7 @@
 Installation Link to heading # pkg install samba413 Samba Configuration Link to heading # vim /usr/local/etc/smb4.conf [global] workgroup = WORKGROUP server string = FreeBSD Server Samba netbios name = freebsd-desktop wins support = yes security = user passdb backend = tdbsam [archive] path = /backuppool/archive valid users = gogo public = no writable = yes browsable = yes read only = no guest ok = no create mask = 0755 directory mask = 0755 pdbedit -a -u gogo new password: retype new password: Enable Samba Server Link to heading sysrc samba_server_enable=&#34;YES&#34; service samba_server start ">
 <meta name="keywords" content="blog,developer,personal">
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Quickly Setup Samba on FreeBSD 13"/>
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Quickly Setup Samba on FreeBSD 13"/>
 <meta name="twitter:description" content="Some notes how I&rsquo;ve quickly set up Samba share for my macOS machines in the local network.
 Installation Link to heading # pkg install samba413 Samba Configuration Link to heading # vim /usr/local/etc/smb4.conf [global] workgroup = WORKGROUP server string = FreeBSD Server Samba netbios name = freebsd-desktop wins support = yes security = user passdb backend = tdbsam [archive] path = /backuppool/archive valid users = gogo public = no writable = yes browsable = yes read only = no guest ok = no create mask = 0755 directory mask = 0755 pdbedit -a -u gogo new password: retype new password: Enable Samba Server Link to heading sysrc samba_server_enable=&#34;YES&#34; service samba_server start "/>
 
@@ -33,6 +32,7 @@ Installation Link to heading # pkg install samba413 Samba Configuration Link to 
 
 
 
+
 <link rel="canonical" href="https://gogolok.github.io/posts/quickly-setup-samba-on-freebsd13/">
 
 
@@ -41,7 +41,7 @@ Installation Link to heading # pkg install samba413 Samba Configuration Link to 
 
   
   
-  <link rel="stylesheet" href="https://gogolok.github.io/css/coder.min.135e22c97ff685fe983fc60048e309ced8f00d8d38f536aa67dba8a13a03dfa4.css" integrity="sha256-E14iyX/2hf6YP8YASOMJztjwDY049TaqZ9uooToD36Q=" crossorigin="anonymous" media="screen" />
+  <link rel="stylesheet" href="https://gogolok.github.io/css/coder.min.e1bdf152d93b060b06ba5d496486ed9c201a8b95d335e035beb5faebe3b61cad.css" integrity="sha256-4b3xUtk7BgsGul1JZIbtnCAai5XTNeA1vrX66&#43;O2HK0=" crossorigin="anonymous" media="screen" />
 
 
 
@@ -247,7 +247,7 @@ the local network.</p>
     
       2019 -
     
-    2023
+    2024
      Robert Gogolok 
     ·
     
@@ -269,6 +269,8 @@ the local network.</p>
 
   
 
+
+  
 
   
 

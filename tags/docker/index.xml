@@ -6,16 +6,14 @@
     <description>Recent content in Docker on gogolok</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 09 Feb 2016 23:47:55 +0200</lastBuildDate><atom:link href="https://gogolok.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Feb 2016 23:47:55 +0200</lastBuildDate>
+    <atom:link href="https://gogolok.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Enable Insecure Registry on Kitematic</title>
       <link>https://gogolok.github.io/posts/kitematic-enable-insecure-registry/</link>
       <pubDate>Tue, 09 Feb 2016 23:47:55 +0200</pubDate>
-      
       <guid>https://gogolok.github.io/posts/kitematic-enable-insecure-registry/</guid>
-      <description>In order to use an insecure registry with Kitematic, you can follow the steps below:
-Login to the Kitematic box, e.g. double click in VirtualBox on the kitematic machine that is named &amp;lsquo;default&amp;rsquo; by default :-) Edit the file /var/lib/boot2docker/profile and append to EXTRA_ARGS the --insecure-registry parameter: EXTRA_ARGS=&amp;#39; ... --insecure-registry myregistrydomain.com:5000 &amp;#39; Restart docker /usr/local/etc/init.d/docker restart You should now be able to push an image to your insecure registry.</description>
+      <description>In order to use an insecure registry with Kitematic, you can follow the steps below:&#xA;Login to the Kitematic box, e.g. double click in VirtualBox on the kitematic machine that is named &amp;lsquo;default&amp;rsquo; by default :-) Edit the file /var/lib/boot2docker/profile and append to EXTRA_ARGS the --insecure-registry parameter: EXTRA_ARGS=&amp;#39; ... --insecure-registry myregistrydomain.com:5000 &amp;#39; Restart docker /usr/local/etc/init.d/docker restart You should now be able to push an image to your insecure registry.</description>
     </item>
-    
   </channel>
 </rss>

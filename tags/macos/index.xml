@@ -6,22 +6,14 @@
     <description>Recent content in macOS on gogolok</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 04 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://gogolok.github.io/tags/macos/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 May 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://gogolok.github.io/tags/macos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My iTerm2 Setup</title>
       <link>https://gogolok.github.io/posts/my-iterm2-setup/</link>
       <pubDate>Mon, 04 May 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://gogolok.github.io/posts/my-iterm2-setup/</guid>
-      <description>I extend the default installation of iTerm2 in the following ways.
-Key Shortcuts Link to heading Move Cusrsor One Worl Left Link to heading Keyboard shortcut: option + left arrow
-Action: Send Hex Code
-Code: 0x1b 0x62
-Move Cusrsor One Worl Right Link to heading Keyboard shortcut: option + right arrow
-Action: Send Hex Code
-Code: 0x1b 0x66
-Colors Link to heading I use the Selenized color palette.</description>
+      <description>I extend the default installation of iTerm2 in the following ways.&#xA;Key Shortcuts Link to heading Move Cusrsor One Worl Left Link to heading Keyboard shortcut: option + left arrow&#xA;Action: Send Hex Code&#xA;Code: 0x1b 0x62&#xA;Move Cusrsor One Worl Right Link to heading Keyboard shortcut: option + right arrow&#xA;Action: Send Hex Code&#xA;Code: 0x1b 0x66&#xA;Colors Link to heading I use the Selenized color palette.</description>
     </item>
-    
   </channel>
 </rss>

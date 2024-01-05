@@ -6,123 +6,98 @@
     <description>Recent content in Tags on gogolok</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 08 Aug 2023 07:47:12 +0200</lastBuildDate><atom:link href="https://gogolok.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Aug 2023 07:47:12 +0200</lastBuildDate>
+    <atom:link href="https://gogolok.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Go</title>
       <link>https://gogolok.github.io/tags/go/</link>
       <pubDate>Tue, 08 Aug 2023 07:47:12 +0200</pubDate>
-      
       <guid>https://gogolok.github.io/tags/go/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>FreeBSD</title>
       <link>https://gogolok.github.io/tags/freebsd/</link>
       <pubDate>Mon, 13 Mar 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://gogolok.github.io/tags/freebsd/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Kubernetes</title>
       <link>https://gogolok.github.io/tags/kubernetes/</link>
       <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://gogolok.github.io/tags/kubernetes/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Programming</title>
       <link>https://gogolok.github.io/tags/programming/</link>
       <pubDate>Sat, 12 Sep 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://gogolok.github.io/tags/programming/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>macOS</title>
       <link>https://gogolok.github.io/tags/macos/</link>
       <pubDate>Mon, 04 May 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://gogolok.github.io/tags/macos/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Blogging</title>
       <link>https://gogolok.github.io/tags/blogging/</link>
       <pubDate>Mon, 20 Aug 2018 23:52:39 +0200</pubDate>
-      
       <guid>https://gogolok.github.io/tags/blogging/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Docker</title>
       <link>https://gogolok.github.io/tags/docker/</link>
       <pubDate>Tue, 09 Feb 2016 23:47:55 +0200</pubDate>
-      
       <guid>https://gogolok.github.io/tags/docker/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Ruby</title>
       <link>https://gogolok.github.io/tags/ruby/</link>
       <pubDate>Fri, 15 Aug 2014 23:36:32 +0200</pubDate>
-      
       <guid>https://gogolok.github.io/tags/ruby/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Sinatra</title>
       <link>https://gogolok.github.io/tags/sinatra/</link>
       <pubDate>Fri, 15 Aug 2014 23:36:32 +0200</pubDate>
-      
       <guid>https://gogolok.github.io/tags/sinatra/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Rails</title>
       <link>https://gogolok.github.io/tags/rails/</link>
       <pubDate>Wed, 16 Apr 2014 23:45:30 +0200</pubDate>
-      
       <guid>https://gogolok.github.io/tags/rails/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>PDF</title>
       <link>https://gogolok.github.io/tags/pdf/</link>
       <pubDate>Wed, 16 Apr 2014 23:41:37 +0200</pubDate>
-      
       <guid>https://gogolok.github.io/tags/pdf/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Conference</title>
       <link>https://gogolok.github.io/tags/conference/</link>
       <pubDate>Wed, 10 Oct 2012 23:42:59 +0200</pubDate>
-      
       <guid>https://gogolok.github.io/tags/conference/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Linux</title>
       <link>https://gogolok.github.io/tags/linux/</link>
       <pubDate>Thu, 01 Mar 2007 00:00:00 +0000</pubDate>
-      
       <guid>https://gogolok.github.io/tags/linux/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

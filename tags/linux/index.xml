@@ -6,18 +6,14 @@
     <description>Recent content in Linux on gogolok</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 01 Mar 2007 00:00:00 +0000</lastBuildDate><atom:link href="https://gogolok.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Mar 2007 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://gogolok.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>bcfg2 - Talk and Paper</title>
       <link>https://gogolok.github.io/posts/bcfg2-talk-and-paper/</link>
       <pubDate>Thu, 01 Mar 2007 00:00:00 +0000</pubDate>
-      
       <guid>https://gogolok.github.io/posts/bcfg2-talk-and-paper/</guid>
-      <description>Gave a talk with Marko Jung in german about bcfg2. The talk was part of the GUUG-Frühjahrsfachgespräch 2007 in Berlin.
-The german abstract says:
-Bcfg2 hilft Systemadministratoren eine konsistente, reproduzierbare und verifizierbare Spezifikation ihrer Systemumgebung zu erstellen und bietet mit Visualisierungs- und Reporting-Tools notwendige Werkzeuge für alltägliche administrative Aufgaben.
-Das distributions- und plattformübergreifende Tool basiert auf einem Modell, in welchem die Systembeschreibung verwendet werden kann, um den Status von Systemen zu validieren und (optional) anzupassen.</description>
+      <description>Gave a talk with Marko Jung in german about bcfg2. The talk was part of the GUUG-Frühjahrsfachgespräch 2007 in Berlin.&#xA;The german abstract says:&#xA;Bcfg2 hilft Systemadministratoren eine konsistente, reproduzierbare und verifizierbare Spezifikation ihrer Systemumgebung zu erstellen und bietet mit Visualisierungs- und Reporting-Tools notwendige Werkzeuge für alltägliche administrative Aufgaben.&#xA;Das distributions- und plattformübergreifende Tool basiert auf einem Modell, in welchem die Systembeschreibung verwendet werden kann, um den Status von Systemen zu validieren und (optional) anzupassen.</description>
     </item>
-    
   </channel>
 </rss>
