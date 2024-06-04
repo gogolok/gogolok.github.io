@@ -18,20 +18,23 @@ In the introduction we covered the basic mechanics of how finalizers allow contr
 https://unsplash.com/@frankiefoto In this blog post we take finalizers a step further by performing the resulting actions of a resource deletion with the help of a custom controller.">
 <meta name="keywords" content="blog,developer,personal">
 
-<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Kubernetes: Finalizers and Custom Controllers"/>
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Kubernetes: Finalizers and Custom Controllers">
 <meta name="twitter:description" content="Authors Link to heading Matthew Doherty Philipp Kuntz Robert Gogolok Introduction Link to heading In the last blog post we provided an introduction to Kubernetes Finalizers.
 In the introduction we covered the basic mechanics of how finalizers allow controllers to implement asynchronous pre-delete hooks. Simply put they inform the Kubernetes control plane that an action needs to take place before Kubernetes garbage collection logic can be performed.
-https://unsplash.com/@frankiefoto In this blog post we take finalizers a step further by performing the resulting actions of a resource deletion with the help of a custom controller."/>
+https://unsplash.com/@frankiefoto In this blog post we take finalizers a step further by performing the resulting actions of a resource deletion with the help of a custom controller.">
 
-<meta property="og:title" content="Kubernetes: Finalizers and Custom Controllers" />
-<meta property="og:description" content="Authors Link to heading Matthew Doherty Philipp Kuntz Robert Gogolok Introduction Link to heading In the last blog post we provided an introduction to Kubernetes Finalizers.
+<meta property="og:url" content="https://gogolok.github.io/posts/kubernetes-finalizers-and-custom-controllers/">
+  <meta property="og:site_name" content="gogolok">
+  <meta property="og:title" content="Kubernetes: Finalizers and Custom Controllers">
+  <meta property="og:description" content="Authors Link to heading Matthew Doherty Philipp Kuntz Robert Gogolok Introduction Link to heading In the last blog post we provided an introduction to Kubernetes Finalizers.
 In the introduction we covered the basic mechanics of how finalizers allow controllers to implement asynchronous pre-delete hooks. Simply put they inform the Kubernetes control plane that an action needs to take place before Kubernetes garbage collection logic can be performed.
-https://unsplash.com/@frankiefoto In this blog post we take finalizers a step further by performing the resulting actions of a resource deletion with the help of a custom controller." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://gogolok.github.io/posts/kubernetes-finalizers-and-custom-controllers/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2020-10-25T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-10-25T00:00:00+00:00" />
-
+https://unsplash.com/@frankiefoto In this blog post we take finalizers a step further by performing the resulting actions of a resource deletion with the help of a custom controller.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+  <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2020-10-25T00:00:00+00:00">
+    <meta property="article:modified_time" content="2020-10-25T00:00:00+00:00">
+    <meta property="article:tag" content="Kubernetes">
 
 
 
@@ -199,10 +202,10 @@ we provided an introduction to <a href="https://kubernetes.io/docs/tasks/extend-
 controllers to implement asynchronous pre-delete hooks. Simply put they inform
 the Kubernetes control plane that an action needs to take place before
 Kubernetes garbage collection logic can be performed.</p>
-<figure><img src="container.jpg"
-         alt="Shipping Container"/><figcaption>
-            <h4>https://unsplash.com/@frankiefoto</h4>
-        </figcaption>
+<figure><img src="https://gogolok.github.io/posts/kubernetes-finalizers-and-custom-controllers/container.jpg"
+    alt="Shipping Container"><figcaption>
+      <h4>https://unsplash.com/@frankiefoto</h4>
+    </figcaption>
 </figure>
 
 <p>In this blog post we take finalizers a step further by performing the resulting
@@ -455,6 +458,9 @@ operations in mind that can be automated using this approach.</p>
 
 
   
+  
+
+
 
   
 

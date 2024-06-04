@@ -19,22 +19,25 @@ For string arguments the result for min is the first argument with the smallest 
 These new built-ins will not break your existing code that already uses the names min and max.">
 <meta name="keywords" content="blog,developer,personal">
 
-<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Built-in min and max functions in Go 1.21"/>
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Built-in min and max functions in Go 1.21">
 <meta name="twitter:description" content="Go 1.21 brings the two built-in functions min and max to compute the smallest or largest value of a fixed number of arguments of ordered types.
 Only a fixed number of arguments is supported. Go needs to know the number of arguments at compile time.
 For string arguments the result for min is the first argument with the smallest (or for max, largest) value, compared lexically byte-wise.
-These new built-ins will not break your existing code that already uses the names min and max."/>
+These new built-ins will not break your existing code that already uses the names min and max.">
 
-<meta property="og:title" content="Built-in min and max functions in Go 1.21" />
-<meta property="og:description" content="Go 1.21 brings the two built-in functions min and max to compute the smallest or largest value of a fixed number of arguments of ordered types.
+<meta property="og:url" content="https://gogolok.github.io/posts/go-1-21-min-max/">
+  <meta property="og:site_name" content="gogolok">
+  <meta property="og:title" content="Built-in min and max functions in Go 1.21">
+  <meta property="og:description" content="Go 1.21 brings the two built-in functions min and max to compute the smallest or largest value of a fixed number of arguments of ordered types.
 Only a fixed number of arguments is supported. Go needs to know the number of arguments at compile time.
 For string arguments the result for min is the first argument with the smallest (or for max, largest) value, compared lexically byte-wise.
-These new built-ins will not break your existing code that already uses the names min and max." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://gogolok.github.io/posts/go-1-21-min-max/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-08-08T07:47:12+02:00" />
-<meta property="article:modified_time" content="2023-08-08T07:47:12+02:00" />
-
+These new built-ins will not break your existing code that already uses the names min and max.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+  <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-08-08T07:47:12+02:00">
+    <meta property="article:modified_time" content="2023-08-08T07:47:12+02:00">
+    <meta property="article:tag" content="Go">
 
 
 
@@ -180,27 +183,27 @@ These new built-ins will not break your existing code that already uses the name
         <p>Go 1.21 brings the two built-in functions <code>min</code> and <code>max</code>
 to compute the smallest or largest value of a fixed number
 of arguments of ordered types.</p>
-<figure><img src="min-max-example.png"
-         alt="min max example"/>
+<figure><img src="https://gogolok.github.io/posts/go-1-21-min-max/min-max-example.png"
+    alt="min max example">
 </figure>
 
 <p>Only a <strong>fixed number of arguments</strong> is supported.
 Go needs to know the number of arguments at compile time.</p>
-<figure><img src="min-max-error.png"
-         alt="min max error"/>
+<figure><img src="https://gogolok.github.io/posts/go-1-21-min-max/min-max-error.png"
+    alt="min max error">
 </figure>
 
 <p>For <strong>string arguments</strong> the result for <code>min</code> is the first argument with the
 smallest (or for <code>max</code>, largest) value, compared lexically byte-wise.</p>
-<figure><img src="min-max-strings.png"
-         alt="min max shadow"/>
+<figure><img src="https://gogolok.github.io/posts/go-1-21-min-max/min-max-strings.png"
+    alt="min max shadow">
 </figure>
 
 <p>These new built-ins <strong>will not break your existing code</strong> that already
 uses the names min and max. Built-ins aren’t keywords,
 so <code>min</code> and <code>max</code> can be shadowed however you like.</p>
-<figure><img src="min-max-shadow.png"
-         alt="min max shadow"/>
+<figure><img src="https://gogolok.github.io/posts/go-1-21-min-max/min-max-shadow.png"
+    alt="min max shadow">
 </figure>
 
 
@@ -254,6 +257,9 @@ so <code>min</code> and <code>max</code> can be shadowed however you like.</p>
 
 
   
+  
+
+
 
   
 

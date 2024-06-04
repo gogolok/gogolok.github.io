@@ -16,16 +16,19 @@
 <meta name="description" content="Authors Link to heading Matthew Doherty Philipp Kuntz Robert Gogolok Introduction Link to heading When extending the Kubernetes API with CustomResourceDefinitions you’ll come across the dilemma to clean up external resources when deleting a custom resource. Although you can create a custom resource simply to store and retrieve structured data, most of the time there is some entity involved, like custom controllers . The controller will manage this resource and create other external resources to handle the semantics of that resource.">
 <meta name="keywords" content="blog,developer,personal">
 
-<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Kubernetes: Finalizers in Custom Resources"/>
-<meta name="twitter:description" content="Authors Link to heading Matthew Doherty Philipp Kuntz Robert Gogolok Introduction Link to heading When extending the Kubernetes API with CustomResourceDefinitions you’ll come across the dilemma to clean up external resources when deleting a custom resource. Although you can create a custom resource simply to store and retrieve structured data, most of the time there is some entity involved, like custom controllers . The controller will manage this resource and create other external resources to handle the semantics of that resource."/>
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Kubernetes: Finalizers in Custom Resources">
+<meta name="twitter:description" content="Authors Link to heading Matthew Doherty Philipp Kuntz Robert Gogolok Introduction Link to heading When extending the Kubernetes API with CustomResourceDefinitions you’ll come across the dilemma to clean up external resources when deleting a custom resource. Although you can create a custom resource simply to store and retrieve structured data, most of the time there is some entity involved, like custom controllers . The controller will manage this resource and create other external resources to handle the semantics of that resource.">
 
-<meta property="og:title" content="Kubernetes: Finalizers in Custom Resources" />
-<meta property="og:description" content="Authors Link to heading Matthew Doherty Philipp Kuntz Robert Gogolok Introduction Link to heading When extending the Kubernetes API with CustomResourceDefinitions you’ll come across the dilemma to clean up external resources when deleting a custom resource. Although you can create a custom resource simply to store and retrieve structured data, most of the time there is some entity involved, like custom controllers . The controller will manage this resource and create other external resources to handle the semantics of that resource." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://gogolok.github.io/posts/kubernetes-finalizers-in-custom-resources/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2020-09-10T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-09-10T00:00:00+00:00" />
-
+<meta property="og:url" content="https://gogolok.github.io/posts/kubernetes-finalizers-in-custom-resources/">
+  <meta property="og:site_name" content="gogolok">
+  <meta property="og:title" content="Kubernetes: Finalizers in Custom Resources">
+  <meta property="og:description" content="Authors Link to heading Matthew Doherty Philipp Kuntz Robert Gogolok Introduction Link to heading When extending the Kubernetes API with CustomResourceDefinitions you’ll come across the dilemma to clean up external resources when deleting a custom resource. Although you can create a custom resource simply to store and retrieve structured data, most of the time there is some entity involved, like custom controllers . The controller will manage this resource and create other external resources to handle the semantics of that resource.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+  <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2020-09-10T00:00:00+00:00">
+    <meta property="article:modified_time" content="2020-09-10T00:00:00+00:00">
+    <meta property="article:tag" content="Kubernetes">
 
 
 
@@ -195,8 +198,8 @@ like custom controllers . The controller will manage this resource and create
 other external resources to handle the semantics of that resource. Those
 external resources should not live forever once the custom resource does not
 exist anymore.</p>
-<figure><img src="container.jpg"
-         alt="Shipping Container"/>
+<figure><img src="https://gogolok.github.io/posts/kubernetes-finalizers-in-custom-resources/container.jpg"
+    alt="Shipping Container">
 </figure>
 
 <p>In the following text we’ll work with a custom resource example that represents
@@ -388,6 +391,9 @@ to protect custom resources with finalizers during reconciliation.</p>
 
 
   
+  
+
+
 
   
 
