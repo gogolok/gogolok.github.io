@@ -6,8 +6,15 @@
     <description>Recent content in Posts on gogolok</description>
     <generator>Hugo 0.125.2</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 08 Aug 2023 07:47:12 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 05 Jun 2024 11:26:03 +0200</lastBuildDate>
     <atom:link href="https://gogolok.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Korifi 0.12.0</title>
+      <link>https://gogolok.github.io/posts/korifi-0-12-0/</link>
+      <pubDate>Wed, 05 Jun 2024 11:26:03 +0200</pubDate>
+      <guid>https://gogolok.github.io/posts/korifi-0-12-0/</guid>
+      <description>The Korifi community has released Korifi 0.12.0. If you want to quickly try it out, please check the install Korifi on kind guide.&#xA;What is Korifi Link to heading Korifi is an offering built by the Cloud Foundry community. Korifi’s purpose is to deliver an inherently higher order abstraction over Kubernetes, ultimately enabling developers to focus on building applications.&#xA;What&amp;rsquo;s Changed? Link to heading For the official relese changes, take a look at the release notes for Korifi 0.</description>
+    </item>
     <item>
       <title>Built-in min and max functions in Go 1.21</title>
       <link>https://gogolok.github.io/posts/go-1-21-min-max/</link>
