@@ -4,7 +4,7 @@
     <title>MacOS on gogolok</title>
     <link>https://gogolok.github.io/tags/macos/</link>
     <description>Recent content in MacOS on gogolok</description>
-    <generator>Hugo 0.125.2</generator>
+    <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 04 May 2020 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://gogolok.github.io/tags/macos/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>https://gogolok.github.io/posts/my-iterm2-setup/</link>
       <pubDate>Mon, 04 May 2020 00:00:00 +0000</pubDate>
       <guid>https://gogolok.github.io/posts/my-iterm2-setup/</guid>
-      <description>I extend the default installation of iTerm2 in the following ways.&#xA;Key Shortcuts Link to heading Move Cusrsor One Worl Left Link to heading Keyboard shortcut: option + left arrow&#xA;Action: Send Hex Code&#xA;Code: 0x1b 0x62&#xA;Move Cusrsor One Worl Right Link to heading Keyboard shortcut: option + right arrow&#xA;Action: Send Hex Code&#xA;Code: 0x1b 0x66&#xA;Colors Link to heading I use the Selenized color palette.</description>
+      <description>&lt;p&gt;I extend the default installation of &lt;a href=&#34;https://iterm2.com/&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;iTerm2&lt;/a&gt; in the&#xA;following ways.&lt;/p&gt;&#xA;&lt;h2 id=&#34;key-shortcuts&#34;&gt;&#xA;  Key Shortcuts&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#key-shortcuts&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;move-cusrsor-one-worl-left&#34;&gt;&#xA;  Move Cusrsor One Worl Left&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#move-cusrsor-one-worl-left&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;p&gt;Keyboard shortcut: &lt;code&gt;option + left arrow&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;Action: Send Hex Code&lt;/p&gt;&#xA;&lt;p&gt;Code: &lt;code&gt;0x1b 0x62&lt;/code&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;move-cusrsor-one-worl-right&#34;&gt;&#xA;  Move Cusrsor One Worl Right&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#move-cusrsor-one-worl-right&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;p&gt;Keyboard shortcut: &lt;code&gt;option + right arrow&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;Action: Send Hex Code&lt;/p&gt;&#xA;&lt;p&gt;Code: &lt;code&gt;0x1b 0x66&lt;/code&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -4,7 +4,7 @@
     <title>Docker on gogolok</title>
     <link>https://gogolok.github.io/tags/docker/</link>
     <description>Recent content in Docker on gogolok</description>
-    <generator>Hugo 0.125.2</generator>
+    <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Tue, 09 Feb 2016 23:47:55 +0200</lastBuildDate>
     <atom:link href="https://gogolok.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>https://gogolok.github.io/posts/kitematic-enable-insecure-registry/</link>
       <pubDate>Tue, 09 Feb 2016 23:47:55 +0200</pubDate>
       <guid>https://gogolok.github.io/posts/kitematic-enable-insecure-registry/</guid>
-      <description>In order to use an insecure registry with Kitematic, you can follow the steps below:&#xA;Login to the Kitematic box, e.g. double click in VirtualBox on the kitematic machine that is named &amp;lsquo;default&amp;rsquo; by default :-) Edit the file /var/lib/boot2docker/profile and append to EXTRA_ARGS the --insecure-registry parameter: EXTRA_ARGS=&amp;#39; ... --insecure-registry myregistrydomain.com:5000 &amp;#39; Restart docker /usr/local/etc/init.d/docker restart You should now be able to push an image to your insecure registry.</description>
+      <description>&lt;p&gt;In order to use an insecure registry with &lt;a href=&#34;https://kitematic.com/&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kitematic&lt;/a&gt;, you can follow the steps below:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Login to the Kitematic box, e.g. double click in VirtualBox on the kitematic machine that is named &amp;lsquo;default&amp;rsquo; by default :-)&lt;/li&gt;&#xA;&lt;li&gt;Edit the file &lt;code&gt;/var/lib/boot2docker/profile&lt;/code&gt; and append to &lt;code&gt;EXTRA_ARGS&lt;/code&gt; the &lt;code&gt;--insecure-registry&lt;/code&gt; parameter:&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;EXTRA_ARGS=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#39;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;...&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;--insecure-registry myregistrydomain.com:5000&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#39;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Restart docker &lt;code&gt;/usr/local/etc/init.d/docker restart&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;You should now be able to push an image to your insecure registry.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

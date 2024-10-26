@@ -13,19 +13,36 @@
 
 
 <meta name="author" content="Robert Gogolok">
-<meta name="description" content="# Gemfile source &#39;https://rubygems.org&#39; gem &#39;sinatra&#39;, &#39;1.4.5&#39; gem &#39;activesupport&#39;, &#39;4.1.4&#39; # app.rb require &#39;active_support/all&#39; require &#39;sinatra&#39; Time::DATE_FORMATS[:my_datetime] = &#34;%Y-%m-%d Hour: %H Minute: %M Second: %S&#34; get &#39;/&#39; do Time.now.to_s(:my_datetime) end https://gist.github.com/gogolok/5877734">
+<meta name="description" content="# Gemfile
+source &#39;https://rubygems.org&#39;
+
+gem &#39;sinatra&#39;, &#39;1.4.5&#39;
+gem &#39;activesupport&#39;, &#39;4.1.4&#39;
+# app.rb
+require &#39;active_support/all&#39;
+require &#39;sinatra&#39;
+
+Time::DATE_FORMATS[:my_datetime] = &#34;%Y-%m-%d Hour: %H Minute: %M Second: %S&#34;
+
+get &#39;/&#39; do
+  Time.now.to_s(:my_datetime)
+end
+https://gist.github.com/gogolok/5877734">
 <meta name="keywords" content="blog,developer,personal">
 
-<meta name="twitter:card" content="summary"><meta name="twitter:title" content="How to Use ActiveSupport Within Sinatra">
-<meta name="twitter:description" content="# Gemfile source &#39;https://rubygems.org&#39; gem &#39;sinatra&#39;, &#39;1.4.5&#39; gem &#39;activesupport&#39;, &#39;4.1.4&#39; # app.rb require &#39;active_support/all&#39; require &#39;sinatra&#39; Time::DATE_FORMATS[:my_datetime] = &#34;%Y-%m-%d Hour: %H Minute: %M Second: %S&#34; get &#39;/&#39; do Time.now.to_s(:my_datetime) end https://gist.github.com/gogolok/5877734">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="How to Use ActiveSupport Within Sinatra">
+  <meta name="twitter:description" content="# Gemfile source &#39;https://rubygems.org&#39; gem &#39;sinatra&#39;, &#39;1.4.5&#39; gem &#39;activesupport&#39;, &#39;4.1.4&#39; # app.rb require &#39;active_support/all&#39; require &#39;sinatra&#39; Time::DATE_FORMATS[:my_datetime] = &#34;%Y-%m-%d Hour: %H Minute: %M Second: %S&#34; get &#39;/&#39; do Time.now.to_s(:my_datetime) end https://gist.github.com/gogolok/5877734">
 
 <meta property="og:url" content="https://gogolok.github.io/posts/how-to-use-activesupport-within-sinatra/">
   <meta property="og:site_name" content="gogolok">
   <meta property="og:title" content="How to Use ActiveSupport Within Sinatra">
-  <meta property="og:description" content="# Gemfile source &amp;#39;https://rubygems.org&amp;#39; gem &amp;#39;sinatra&amp;#39;, &amp;#39;1.4.5&amp;#39; gem &amp;#39;activesupport&amp;#39;, &amp;#39;4.1.4&amp;#39; # app.rb require &amp;#39;active_support/all&amp;#39; require &amp;#39;sinatra&amp;#39; Time::DATE_FORMATS[:my_datetime] = &amp;#34;%Y-%m-%d Hour: %H Minute: %M Second: %S&amp;#34; get &amp;#39;/&amp;#39; do Time.now.to_s(:my_datetime) end https://gist.github.com/gogolok/5877734">
+  <meta property="og:description" content="# Gemfile source &#39;https://rubygems.org&#39; gem &#39;sinatra&#39;, &#39;1.4.5&#39; gem &#39;activesupport&#39;, &#39;4.1.4&#39; # app.rb require &#39;active_support/all&#39; require &#39;sinatra&#39; Time::DATE_FORMATS[:my_datetime] = &#34;%Y-%m-%d Hour: %H Minute: %M Second: %S&#34; get &#39;/&#39; do Time.now.to_s(:my_datetime) end https://gist.github.com/gogolok/5877734">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
-  <meta property="article:section" content="posts">
+    <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2014-08-15T23:36:32+02:00">
     <meta property="article:modified_time" content="2014-08-15T23:36:32+02:00">
     <meta property="article:tag" content="Ruby">
@@ -37,12 +54,14 @@
 <link rel="canonical" href="https://gogolok.github.io/posts/how-to-use-activesupport-within-sinatra/">
 
 
-<link rel="preload" href="https://gogolok.github.io/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://gogolok.github.io/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://gogolok.github.io/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://gogolok.github.io/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
 
 
   
   
-  <link rel="stylesheet" href="https://gogolok.github.io/css/coder.min.e1bdf152d93b060b06ba5d496486ed9c201a8b95d335e035beb5faebe3b61cad.css" integrity="sha256-4b3xUtk7BgsGul1JZIbtnCAai5XTNeA1vrX66&#43;O2HK0=" crossorigin="anonymous" media="screen" />
+  <link rel="stylesheet" href="https://gogolok.github.io/css/coder.min.aa5ef26fa979d6793724ae2dbd71efa94fd16cb1c5c7db3b6651f21f9892a5fd.css" integrity="sha256-ql7yb6l51nk3JK4tvXHvqU/RbLHFx9s7ZlHyH5iSpf0=" crossorigin="anonymous" media="screen" />
 
 
 
@@ -91,7 +110,7 @@
   
 <div class="float-container">
     <a id="dark-mode-toggle" class="colorscheme-toggle">
-        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
     </a>
 </div>
 
@@ -99,31 +118,33 @@
   <main class="wrapper">
     <nav class="navigation">
   <section class="container">
+    
     <a class="navigation-title" href="https://gogolok.github.io/">
       gogolok
     </a>
     
+    
       <input type="checkbox" id="menu-toggle" />
       <label class="menu-button float-right" for="menu-toggle">
-        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
       </label>
       <ul class="navigation-list">
         
           
             <li class="navigation-item">
-              <a class="navigation-link" href="https://gogolok.github.io/about/">Impressum</a>
+              <a class="navigation-link " href="https://gogolok.github.io/about/">Impressum</a>
             </li>
           
             <li class="navigation-item">
-              <a class="navigation-link" href="https://gogolok.github.io/now/">Now</a>
+              <a class="navigation-link " href="https://gogolok.github.io/now/">Now</a>
             </li>
           
             <li class="navigation-item">
-              <a class="navigation-link" href="https://gogolok.github.io/posts/">Blog</a>
+              <a class="navigation-link " href="https://gogolok.github.io/posts/">Blog</a>
             </li>
           
             <li class="navigation-item">
-              <a class="navigation-link" href="https://gogolok.github.io/projects/">Projects</a>
+              <a class="navigation-link " href="https://gogolok.github.io/projects/">Projects</a>
             </li>
           
         
@@ -149,20 +170,20 @@
         <div class="post-meta">
           <div class="date">
             <span class="posted-on">
-              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
               <time datetime="2014-08-15T23:36:32&#43;02:00">
                 August 15, 2014
               </time>
             </span>
             <span class="reading-time">
-              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
               One-minute read
             </span>
           </div>
           
           
           <div class="tags">
-  <i class="fa fa-tag" aria-hidden="true"></i>
+  <i class="fa-solid fa-tag" aria-hidden="true"></i>
     <span class="tag">
       <a href="https://gogolok.github.io/tags/ruby/">Ruby</a>
     </span>
@@ -199,6 +220,8 @@
         
 
 
+        
+        
         
         
         
@@ -242,9 +265,8 @@
 
 
   
+
   
-
-
 
   
 

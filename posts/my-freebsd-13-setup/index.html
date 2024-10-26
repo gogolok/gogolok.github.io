@@ -13,28 +13,45 @@
 
 
 <meta name="author" content="Robert Gogolok">
-<meta name="description" content="From time to time I&rsquo;m doing some stuff on FreeBSD. I still like it for its simplicity (I&rsquo;m old and Linux is progressing way to fast ;-).
-I&rsquo;m keeping some notes how to set up FreeBSD manually in this blog post. For newer versions of FreeBSD I&rsquo;ll create a new post.
+<meta name="description" content="From time to time I&rsquo;m doing some stuff on FreeBSD.
+I still like it for its simplicity (I&rsquo;m old and Linux is progressing way to
+fast ;-).
+I&rsquo;m keeping some notes how to set up FreeBSD manually in this blog post.
+For newer versions of FreeBSD I&rsquo;ll create a new post.
 Disadvantages:
-manual setup Update to Latest Stable Version Link to heading After a fresh install, we first apply latest updates to the current FreeBSD version.">
+
+manual setup
+
+
+  Update to Latest Stable Version
+  
+    
+    Link to heading
+  
+
+After a fresh install, we first apply latest updates to the current FreeBSD
+version.">
 <meta name="keywords" content="blog,developer,personal">
 
-<meta name="twitter:card" content="summary"><meta name="twitter:title" content="My Freebsd 13 Setup">
-<meta name="twitter:description" content="From time to time I&rsquo;m doing some stuff on FreeBSD. I still like it for its simplicity (I&rsquo;m old and Linux is progressing way to fast ;-).
-I&rsquo;m keeping some notes how to set up FreeBSD manually in this blog post. For newer versions of FreeBSD I&rsquo;ll create a new post.
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="My Freebsd 13 Setup">
+  <meta name="twitter:description" content="From time to time I’m doing some stuff on FreeBSD. I still like it for its simplicity (I’m old and Linux is progressing way to fast ;-).
+I’m keeping some notes how to set up FreeBSD manually in this blog post. For newer versions of FreeBSD I’ll create a new post.
 Disadvantages:
 manual setup Update to Latest Stable Version Link to heading After a fresh install, we first apply latest updates to the current FreeBSD version.">
 
 <meta property="og:url" content="https://gogolok.github.io/posts/my-freebsd-13-setup/">
   <meta property="og:site_name" content="gogolok">
   <meta property="og:title" content="My Freebsd 13 Setup">
-  <meta property="og:description" content="From time to time I&amp;rsquo;m doing some stuff on FreeBSD. I still like it for its simplicity (I&amp;rsquo;m old and Linux is progressing way to fast ;-).
-I&amp;rsquo;m keeping some notes how to set up FreeBSD manually in this blog post. For newer versions of FreeBSD I&amp;rsquo;ll create a new post.
+  <meta property="og:description" content="From time to time I’m doing some stuff on FreeBSD. I still like it for its simplicity (I’m old and Linux is progressing way to fast ;-).
+I’m keeping some notes how to set up FreeBSD manually in this blog post. For newer versions of FreeBSD I’ll create a new post.
 Disadvantages:
 manual setup Update to Latest Stable Version Link to heading After a fresh install, we first apply latest updates to the current FreeBSD version.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
-  <meta property="article:section" content="posts">
+    <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2021-04-25T00:00:00+00:00">
     <meta property="article:modified_time" content="2021-04-25T00:00:00+00:00">
     <meta property="article:tag" content="FreeBSD">
@@ -45,12 +62,14 @@ manual setup Update to Latest Stable Version Link to heading After a fresh insta
 <link rel="canonical" href="https://gogolok.github.io/posts/my-freebsd-13-setup/">
 
 
-<link rel="preload" href="https://gogolok.github.io/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://gogolok.github.io/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://gogolok.github.io/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://gogolok.github.io/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
 
 
   
   
-  <link rel="stylesheet" href="https://gogolok.github.io/css/coder.min.e1bdf152d93b060b06ba5d496486ed9c201a8b95d335e035beb5faebe3b61cad.css" integrity="sha256-4b3xUtk7BgsGul1JZIbtnCAai5XTNeA1vrX66&#43;O2HK0=" crossorigin="anonymous" media="screen" />
+  <link rel="stylesheet" href="https://gogolok.github.io/css/coder.min.aa5ef26fa979d6793724ae2dbd71efa94fd16cb1c5c7db3b6651f21f9892a5fd.css" integrity="sha256-ql7yb6l51nk3JK4tvXHvqU/RbLHFx9s7ZlHyH5iSpf0=" crossorigin="anonymous" media="screen" />
 
 
 
@@ -99,7 +118,7 @@ manual setup Update to Latest Stable Version Link to heading After a fresh insta
   
 <div class="float-container">
     <a id="dark-mode-toggle" class="colorscheme-toggle">
-        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
     </a>
 </div>
 
@@ -107,31 +126,33 @@ manual setup Update to Latest Stable Version Link to heading After a fresh insta
   <main class="wrapper">
     <nav class="navigation">
   <section class="container">
+    
     <a class="navigation-title" href="https://gogolok.github.io/">
       gogolok
     </a>
     
+    
       <input type="checkbox" id="menu-toggle" />
       <label class="menu-button float-right" for="menu-toggle">
-        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
       </label>
       <ul class="navigation-list">
         
           
             <li class="navigation-item">
-              <a class="navigation-link" href="https://gogolok.github.io/about/">Impressum</a>
+              <a class="navigation-link " href="https://gogolok.github.io/about/">Impressum</a>
             </li>
           
             <li class="navigation-item">
-              <a class="navigation-link" href="https://gogolok.github.io/now/">Now</a>
+              <a class="navigation-link " href="https://gogolok.github.io/now/">Now</a>
             </li>
           
             <li class="navigation-item">
-              <a class="navigation-link" href="https://gogolok.github.io/posts/">Blog</a>
+              <a class="navigation-link " href="https://gogolok.github.io/posts/">Blog</a>
             </li>
           
             <li class="navigation-item">
-              <a class="navigation-link" href="https://gogolok.github.io/projects/">Projects</a>
+              <a class="navigation-link " href="https://gogolok.github.io/projects/">Projects</a>
             </li>
           
         
@@ -157,20 +178,20 @@ manual setup Update to Latest Stable Version Link to heading After a fresh insta
         <div class="post-meta">
           <div class="date">
             <span class="posted-on">
-              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
               <time datetime="2021-04-25T00:00:00Z">
                 April 25, 2021
               </time>
             </span>
             <span class="reading-time">
-              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
               2-minute read
             </span>
           </div>
           
           
           <div class="tags">
-  <i class="fa fa-tag" aria-hidden="true"></i>
+  <i class="fa-solid fa-tag" aria-hidden="true"></i>
     <span class="tag">
       <a href="https://gogolok.github.io/tags/freebsd/">FreeBSD</a>
     </span></div>
@@ -192,7 +213,7 @@ For newer versions of FreeBSD I&rsquo;ll create a new post.</p>
 <h2 id="update-to-latest-stable-version">
   Update to Latest Stable Version
   <a class="heading-link" href="#update-to-latest-stable-version">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
@@ -206,7 +227,7 @@ version.</p>
 </span></span></code></pre></div><h2 id="sudo">
   Sudo
   <a class="heading-link" href="#sudo">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
@@ -216,7 +237,7 @@ version.</p>
 </span></span></code></pre></div><h2 id="shell">
   Shell
   <a class="heading-link" href="#shell">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
@@ -224,7 +245,7 @@ version.</p>
 </span></span></code></pre></div><h2 id="new-user-and-default-shell">
   New User And Default Shell
   <a class="heading-link" href="#new-user-and-default-shell">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
@@ -262,7 +283,7 @@ version.</p>
 <h2 id="general-packages">
   General Packages
   <a class="heading-link" href="#general-packages">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
@@ -273,14 +294,14 @@ version.</p>
 </span></span></code></pre></div><h2 id="ruby">
   Ruby
   <a class="heading-link" href="#ruby">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
 <h3 id="rbenv">
   rbenv
   <a class="heading-link" href="#rbenv">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h3>
@@ -299,7 +320,7 @@ version.</p>
 </span></span></code></pre></div><h3 id="rails">
   Rails
   <a class="heading-link" href="#rails">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h3>
@@ -314,7 +335,7 @@ version.</p>
 </span></span></code></pre></div><h3 id="issues">
   Issues
   <a class="heading-link" href="#issues">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h3>
@@ -330,6 +351,8 @@ Should be fixed with puma gem version ``.</li>
         
 
 
+        
+        
         
         
         
@@ -373,9 +396,8 @@ Should be fixed with puma gem version ``.</li>
 
 
   
+
   
-
-
 
   
 

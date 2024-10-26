@@ -4,7 +4,7 @@
     <title>Programming on gogolok</title>
     <link>https://gogolok.github.io/tags/programming/</link>
     <description>Recent content in Programming on gogolok</description>
-    <generator>Hugo 0.125.2</generator>
+    <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 12 Sep 2020 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://gogolok.github.io/tags/programming/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>https://gogolok.github.io/posts/happy-programmers-day-2020/</link>
       <pubDate>Sat, 12 Sep 2020 00:00:00 +0000</pubDate>
       <guid>https://gogolok.github.io/posts/happy-programmers-day-2020/</guid>
-      <description>I love programming.&#xA;A long time ago in a galaxy far, far away &amp;hellip; I’ve got a Nintendo NES. It was nice to play Super Mario, Mega Man, and other classic games, but the games were rather expensive. So I convinced my parents to buy an even more expensive personal computer (PC). Games for the PC were also expensive, so I looked into other stuff I can do with a PC.</description>
+      <description>&lt;p&gt;I love programming.&lt;/p&gt;&#xA;&lt;p&gt;A long time ago in a galaxy far, far away &amp;hellip; I’ve got a Nintendo NES. It was&#xA;nice to play Super Mario, Mega Man, and other classic games, but the games were&#xA;rather expensive. So I convinced my parents to buy an even more expensive&#xA;personal computer (PC). Games for the PC were also expensive, so I looked into&#xA;other stuff I can do with a PC. I’ve figured out that a PC can be used in many&#xA;different ways beyond gaming and I got a book about C++, learned about Linux,&#xA;got into the Internet, and found out about the &lt;a href=&#34;https://kde.org/&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;K Desktop environment (KDE)&lt;/a&gt;.&#xA;This is when I became more familiar with programming and started contributing&#xA;to KDE and other Open Source projects.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -4,7 +4,7 @@
     <title>Go on gogolok</title>
     <link>https://gogolok.github.io/tags/go/</link>
     <description>Recent content in Go on gogolok</description>
-    <generator>Hugo 0.125.2</generator>
+    <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 05 Jun 2024 11:26:03 +0200</lastBuildDate>
     <atom:link href="https://gogolok.github.io/tags/go/index.xml" rel="self" type="application/rss+xml" />
@@ -13,21 +13,21 @@
       <link>https://gogolok.github.io/posts/korifi-0-12-0/</link>
       <pubDate>Wed, 05 Jun 2024 11:26:03 +0200</pubDate>
       <guid>https://gogolok.github.io/posts/korifi-0-12-0/</guid>
-      <description>The Korifi community has released Korifi 0.12.0. If you want to quickly try it out, please check the install Korifi on kind guide.&#xA;What is Korifi Link to heading Korifi is an offering built by the Cloud Foundry community. Korifi’s purpose is to deliver an inherently higher order abstraction over Kubernetes, ultimately enabling developers to focus on building applications.&#xA;What&amp;rsquo;s Changed? Link to heading For the official relese changes, take a look at the release notes for Korifi 0.</description>
+      <description>&lt;p&gt;The Korifi community &lt;a href=&#34;https://github.com/cloudfoundry/korifi/releases/tag/v0.12.0&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;has released Korifi 0.12.0&lt;/a&gt;.&#xA;If you want to quickly try it out, please check the &lt;a href=&#34;https://github.com/cloudfoundry/korifi/blob/main/INSTALL.kind.md&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;install Korifi on kind&lt;/a&gt; guide.&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;https://gogolok.github.io/posts/korifi-0-12-0/korifi-logo.png&#34;&#xA;    alt=&#34;Korifi logo&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;h2 id=&#34;what-is-korifi&#34;&gt;&#xA;  What is Korifi&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#what-is-korifi&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.cloudfoundry.org/technology/korifi/&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Korifi is an offering built by the Cloud Foundry community&lt;/a&gt;.&#xA;Korifi’s purpose is to deliver an inherently higher order abstraction over Kubernetes,&#xA;ultimately enabling developers to focus on building applications.&lt;/p&gt;&#xA;&lt;h2 id=&#34;whats-changed&#34;&gt;&#xA;  What&amp;rsquo;s Changed?&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#whats-changed&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;For the official relese changes, take a look at the &lt;a href=&#34;https://github.com/cloudfoundry/korifi/releases/tag/v0.12.0&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;release notes for Korifi 0.12.0&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Built-in min and max functions in Go 1.21</title>
       <link>https://gogolok.github.io/posts/go-1-21-min-max/</link>
       <pubDate>Tue, 08 Aug 2023 07:47:12 +0200</pubDate>
       <guid>https://gogolok.github.io/posts/go-1-21-min-max/</guid>
-      <description>Go 1.21 brings the two built-in functions min and max to compute the smallest or largest value of a fixed number of arguments of ordered types.&#xA;Only a fixed number of arguments is supported. Go needs to know the number of arguments at compile time.&#xA;For string arguments the result for min is the first argument with the smallest (or for max, largest) value, compared lexically byte-wise.&#xA;These new built-ins will not break your existing code that already uses the names min and max.</description>
+      <description>&lt;p&gt;Go 1.21 brings the two built-in functions &lt;code&gt;min&lt;/code&gt; and &lt;code&gt;max&lt;/code&gt;&#xA;to compute the smallest or largest value of a fixed number&#xA;of arguments of ordered types.&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;https://gogolok.github.io/posts/go-1-21-min-max/min-max-example.png&#34;&#xA;    alt=&#34;min max example&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Only a &lt;strong&gt;fixed number of arguments&lt;/strong&gt; is supported.&#xA;Go needs to know the number of arguments at compile time.&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;https://gogolok.github.io/posts/go-1-21-min-max/min-max-error.png&#34;&#xA;    alt=&#34;min max error&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;For &lt;strong&gt;string arguments&lt;/strong&gt; the result for &lt;code&gt;min&lt;/code&gt; is the first argument with the&#xA;smallest (or for &lt;code&gt;max&lt;/code&gt;, largest) value, compared lexically byte-wise.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Switched to Hugo</title>
       <link>https://gogolok.github.io/posts/switched-to-hugo/</link>
       <pubDate>Mon, 20 Aug 2018 23:52:39 +0200</pubDate>
       <guid>https://gogolok.github.io/posts/switched-to-hugo/</guid>
-      <description>This site is being generated by Hugo from now on.</description>
+      <description>&lt;p&gt;This site is being generated by &lt;a href=&#34;https://gohugo.io/&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo&lt;/a&gt; from now on.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
