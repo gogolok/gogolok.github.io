@@ -97,7 +97,7 @@ Installation Link to heading # pkg install samba413 Samba Configuration Link to 
 
   
   
-  <link rel="stylesheet" href="https://gogolok.github.io/css/coder.min.aa5ef26fa979d6793724ae2dbd71efa94fd16cb1c5c7db3b6651f21f9892a5fd.css" integrity="sha256-ql7yb6l51nk3JK4tvXHvqU/RbLHFx9s7ZlHyH5iSpf0=" crossorigin="anonymous" media="screen" />
+  <link rel="stylesheet" href="https://gogolok.github.io/css/coder.min.022594d625780e2edf64581b893d32cb35c11de5d88953ea4ad3c2e45451e214.css" integrity="sha256-AiWU1iV4Di7fZFgbiT0yyzXBHeXYiVPqStPC5FRR4hQ=" crossorigin="anonymous" media="screen" />
 
 
 
@@ -238,7 +238,7 @@ the local network.</p>
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#007f7f"># pkg install samba413</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># pkg install samba413</span>
 </span></span></code></pre></div><h2 id="samba-configuration">
   Samba Configuration
   <a class="heading-link" href="#samba-configuration">
@@ -246,27 +246,27 @@ the local network.</p>
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#007f7f"># vim /usr/local/etc/smb4.conf</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>[global]
-</span></span><span style="display:flex;"><span>workgroup = WORKGROUP
-</span></span><span style="display:flex;"><span>server string = FreeBSD Server Samba
-</span></span><span style="display:flex;"><span>netbios name = freebsd-desktop
-</span></span><span style="display:flex;"><span>wins support = yes
-</span></span><span style="display:flex;"><span>security = user
-</span></span><span style="display:flex;"><span>passdb backend = tdbsam
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>[archive]
-</span></span><span style="display:flex;"><span>path = /backuppool/archive
-</span></span><span style="display:flex;"><span>valid users = gogo
-</span></span><span style="display:flex;"><span>public = no
-</span></span><span style="display:flex;"><span>writable  = yes
-</span></span><span style="display:flex;"><span>browsable = yes
-</span></span><span style="display:flex;"><span>read only = no
-</span></span><span style="display:flex;"><span>guest ok = no
-</span></span><span style="display:flex;"><span>create mask = 0755
-</span></span><span style="display:flex;"><span>directory mask = 0755
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>pdbedit -a -u gogo
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># vim /usr/local/etc/smb4.conf</span>
+</span></span></code></pre></div><pre tabindex="0"><code>[global]
+workgroup = WORKGROUP
+server string = FreeBSD Server Samba
+netbios name = freebsd-desktop
+wins support = yes
+security = user
+passdb backend = tdbsam
+
+
+[archive]
+path = /backuppool/archive
+valid users = gogo
+public = no
+writable  = yes
+browsable = yes
+read only = no
+guest ok = no
+create mask = 0755
+directory mask = 0755
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>pdbedit -a -u gogo
 </span></span><span style="display:flex;"><span>new password:
 </span></span><span style="display:flex;"><span>retype new password:
 </span></span></code></pre></div><h2 id="enable-samba-server">
@@ -276,8 +276,8 @@ the local network.</p>
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sysrc samba_server_enable=<span style="color:#0ff;font-weight:bold">&#34;YES&#34;</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>service samba_server start
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sysrc samba_server_enable<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;YES&#34;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>service samba_server start
 </span></span></code></pre></div>
       </div>
 
@@ -361,6 +361,7 @@ the local network.</p>
   
 
   
-</body>
 
+  
+</body>
 </html>
