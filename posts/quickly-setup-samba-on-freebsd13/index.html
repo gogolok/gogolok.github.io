@@ -238,7 +238,7 @@ the local network.</p>
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#007f7f"># pkg install samba413</span>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#007f7f"># pkg install samba413</span>
 </span></span></code></pre></div><h2 id="samba-configuration">
   Samba Configuration
   <a class="heading-link" href="#samba-configuration">
@@ -246,8 +246,8 @@ the local network.</p>
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#007f7f"># vim /usr/local/etc/smb4.conf</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>[global]
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#007f7f"># vim /usr/local/etc/smb4.conf</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>[global]
 </span></span><span style="display:flex;"><span>workgroup = WORKGROUP
 </span></span><span style="display:flex;"><span>server string = FreeBSD Server Samba
 </span></span><span style="display:flex;"><span>netbios name = freebsd-desktop
@@ -266,7 +266,7 @@ the local network.</p>
 </span></span><span style="display:flex;"><span>guest ok = no
 </span></span><span style="display:flex;"><span>create mask = 0755
 </span></span><span style="display:flex;"><span>directory mask = 0755
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>pdbedit -a -u gogo
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>pdbedit -a -u gogo
 </span></span><span style="display:flex;"><span>new password:
 </span></span><span style="display:flex;"><span>retype new password:
 </span></span></code></pre></div><h2 id="enable-samba-server">
@@ -276,8 +276,8 @@ the local network.</p>
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sysrc samba_server_enable=<span style="color:#0ff;font-weight:bold">&#34;YES&#34;</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>service samba_server start
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sysrc samba_server_enable=<span style="color:#0ff;font-weight:bold">&#34;YES&#34;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>service samba_server start
 </span></span></code></pre></div>
       </div>
 
