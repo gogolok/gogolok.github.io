@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Rails on gogolok</title>
-    <link>https://gogolok.github.io/tags/rails/</link>
-    <description>Recent content in Rails on gogolok</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Wed, 16 Apr 2014 23:45:30 +0200</lastBuildDate>
-    <atom:link href="https://gogolok.github.io/tags/rails/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Rails Girls Luxembourg: Rails Coach</title>
-      <link>https://gogolok.github.io/posts/rails-girls-luxembourg-rails-coach/</link>
-      <pubDate>Wed, 16 Apr 2014 23:45:30 +0200</pubDate>
-      <guid>https://gogolok.github.io/posts/rails-girls-luxembourg-rails-coach/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m helping &lt;a href=&#34;http://railsgirls.com/luxembourg&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rails Girls Luxembourg&lt;/a&gt; as a Rails coach this May.&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Rails on gogolok</title>
+		<link>https://gogolok.github.io/tags/rails/</link>
+		<description>Recent content in Rails on gogolok</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Wed, 16 Apr 2014 23:45:30 +0200</lastBuildDate>
+		
+			<atom:link href="https://gogolok.github.io/tags/rails/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Rails Girls Luxembourg: Rails Coach</title>
+				<link>https://gogolok.github.io/posts/rails-girls-luxembourg-rails-coach/</link>
+				<pubDate>Wed, 16 Apr 2014 23:45:30 +0200</pubDate>
+				<guid>https://gogolok.github.io/posts/rails-girls-luxembourg-rails-coach/</guid>
+				<description>&lt;p&gt;I&amp;rsquo;m helping &lt;a href=&#34;http://railsgirls.com/luxembourg&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rails Girls Luxembourg&lt;/a&gt; as a Rails coach this May.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>
